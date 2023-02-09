@@ -1,0 +1,30 @@
+<h3 i18n="@@perspective">Perspective</h3>
+<div class="dialog-form">
+  <div mat-dialog-content>
+    <mat-form-field class="full-width">
+      <mat-label i18n="@@comboRoleLabel">Select Water Related Role</mat-label>
+      <mat-select [(ngModel)]="userRole" required>
+        <mat-option *ngFor="let role of roleOptions" [value]="role['en-us']">
+          {{ role[lan] }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions style="text-align: right; width: 100%">
+    <button
+      i18n="@@viewresults"
+      mat-raised-button
+      color="primary"
+      i18n-matTooltip
+      [routerLink]="['/load-scenario', data, userRole]"
+      [mat-dialog-close]="data"
+      [disabled]="userRole === ''">
+      View Scenario Results
+    </button>
+    <button
+      i18n="@@cancel"
+      color="warn"
+      mat-raised-button
+      (click)="onNoClick()">Cancel</button>
+  </div>
+</div>

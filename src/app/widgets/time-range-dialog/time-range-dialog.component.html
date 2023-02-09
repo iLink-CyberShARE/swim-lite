@@ -1,0 +1,46 @@
+<div class="dialog-form">
+  <h3 i18n="@@time-range-title">Model Projection Time Range</h3>
+
+  <div *ngIf="isLoading" class="spinner-container">
+    <mat-spinner></mat-spinner>
+    <p i18n="@@loading">Loading...</p>
+  </div>
+
+  <div
+    mat-dialog-content
+    *ngIf="!isLoading && !noData"
+  >
+    {{ start.paraminfo[lanIndex].paramDescription }} <br />
+
+    <mat-slider
+      thumbLabel
+      [step]="stepSize"
+      [max]="start.maxValue"
+      [min]="start.minValue"
+      [(ngModel)]="start.paramValue"
+      (change)="validateStart()"
+
+    >
+    </mat-slider> <br />
+    <span i18n="@@value">Value:</span>
+    {{ start.paramValue }} Min: {{ start.minValue }} Max: {{ end.paramValue - minYears }} <br /><br />
+
+    {{ end.paraminfo[lanIndex].paramDescription }} <br />
+    <mat-slider
+      thumbLabel
+      [step]="stepSize"
+      [max]="end.maxValue"
+      [min]="end.minValue"
+      [(ngModel)]="end.paramValue"
+      (change)="validateStart()"
+    >
+    </mat-slider> <br />
+    <span i18n="@@value">Value:</span> {{ end.paramValue }} Min: {{ end.minValue }} Max: {{ end.maxValue }} <br /><br />
+  </div>
+  <div *ngIf="noData">
+    <span i18n="@@no-time-range">Time Range options not availble for this model.</span>
+  </div>
+  <div class="down-buttons" mat-dialog-actions>
+    <button i18n="@@closeLabel" mat-button (click)="onNoClick()">Close</button>
+  </div>
+</div>

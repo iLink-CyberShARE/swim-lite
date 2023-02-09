@@ -1,0 +1,47 @@
+<mat-card class="scenario-theme">
+  <mat-card-header style="min-height: 60px">
+    <mat-card-title
+      class="theme-title"
+      (click)="onThemeSelected()"
+      [ngClass]="{ active: themeChoice.isSelected }"
+      >{{ themeChoice.info[this.langIndex].title }}</mat-card-title
+    >
+  </mat-card-header>
+  <figure style="margin-left: 0px; margin-right: 0px">
+    <img
+      matTooltip="click image to select scenario"
+      i18n-matTooltip
+      mat-card-image
+      [ngClass]="{ selected: themeChoice.isSelected }"
+      (click)="onThemeSelected()"
+      [src]="themeChoice.info[this.langIndex].imgSource"
+      alt="Theme Image"
+    />
+    <figcaption style="font-size: x-small; margin-top: 0px">
+      {{ themeChoice.info[this.langIndex].imgCitation }}
+    </figcaption>
+  </figure>
+  <mat-card-content>
+    <p>{{ themeChoice.info[this.langIndex].description }}</p>
+    <p>{{ themeChoice.info[this.langIndex].appendix }}</p>
+    <p>
+      <span *ngIf="themeChoice.sourceLink!= ''" i18n>Derived from:</span>
+      <a target="_blank" [href]="themeChoice.sourceLink">{{
+        themeChoice.sourceLink
+      }}</a>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      i18n="@@themeLearnButton"
+      matTooltip="click to show values for affected model inputs"
+      i18n-matTooltip
+      mat-button
+      color="primary"
+      *ngIf="showDataButton"
+      (click)="onShowData()"
+    >
+      Learn more...
+    </button>
+  </mat-card-actions>
+</mat-card>

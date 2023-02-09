@@ -1,0 +1,134 @@
+<header class="home-header-background">
+  <div class="home-header-section">
+    <div class="home-header-headline">
+      <img class="header-icon" src="assets/img/swim-logo.png" >
+      <h2 i18n="@@homeTitle">Sustainable Water through Integrated Modeling</h2>
+      <div class="header-button">
+        <button i18n class="header-button-inner" color="accent" mat-raised-button [routerLink]="['/first-splash']">
+          Take a first splash
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="home-content-background">
+
+  <section class="home-about">
+    <mat-card>
+      <p>
+        <b i18n="@@aboutAcro">SWIM: </b>
+        <span i18n="@@aboutTitle"
+          >Sustainable Water through Integrated Modeling. Supported by NSF
+          Award# OAC-1835897.
+        </span>
+      </p>
+      <p i18n="@@aboutP1" class="justified-text">
+        Scientific models of complex water resource systems help us understand
+        and experiment with the behavior of those systems. Most scientific
+        modeling today requires the use of software that can be hard to
+        understand, expensive to build and maintain, and present little online
+        access. Many of these challenges can be tackled through the use of
+        software that bridges the capabilities of water resource system modeling
+        and the needs of water resource stakeholders.
+      </p>
+      <p i18n="@@aboutP2" class="justified-text">
+        The goal of the SWIM project is to advance water sustainability research
+        capabilities through the <b>integration</b>, <b>execution</b> and
+        <b>interpretation</b> of water models and participatory reasoning
+        processes. Using the meaning of data and models, SWIM facilitates
+        interpretations of water availability in the US Southwest and North of
+        Mexico for stakeholder-driven analysis from the socio-environmental
+        perspective.
+      </p>
+    </mat-card>
+  </section>
+
+  <section class="home-models">
+    <h3 i18n="@@homeModels" class="title-center">MODELS</h3>
+    <div class="flex-container" fxLayout="row" fxLayout.xs="column">
+      <mat-card
+        fxFlexAlign="center"
+        class="child-1"
+        [routerLink]="['/wb2-intro']"
+        routerLinkActive="router-link-active"
+      >
+        <mat-card-title i18n="@@modelsHidroTitle">
+          Middle Rio Grande Basin Water Balance Model
+        </mat-card-title>
+        <mat-card-content>
+          <br /><fa-icon class="model-icon" [icon]="faBalanceScale"></fa-icon><br />
+          <p i18n="@@modelsHidroDesc">
+            Accountability model for the Middle Rio Grande Basin that covers
+            water balance from San Marcial twin gauges above Elephant Butte to
+            Fort Quitman.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="home-scenarios">
+    <h3 i18n="@@homeScenarios" class="title-center">SCENARIOS</h3>
+    <div class="flex-container" fxLayout="row" fxLayout.xs="column">
+      <mat-card
+        fxFlexAlign="center"
+        class="child-1"
+        [routerLink]="['/public']"
+        routerLinkActive="router-link-active"
+      >
+        <mat-card-title i18n="@@scenariosPublicTitle">
+          Public Scenarios
+        </mat-card-title>
+        <mat-card-content>
+          <br /><fa-icon class="model-icon" [icon]="faUsers"></fa-icon><br />
+          <p i18n="@@scenariosPublicDesc">
+            Check out model scenarios that other users have recently made
+            available for everyone.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <!--
+      <mat-card
+        fxFlexAlign="center"
+        class="child-2"
+        [routerLink]="['/canned-scenarios']"
+        routerLinkActive="router-link-active"
+      >
+        <mat-card-title i18n="@@scenariosCannedTitle">
+          Canned Scenarios
+        </mat-card-title>
+        <mat-card-content>
+          <br /><fa-icon class="model-icon" [icon]="faArchive"></fa-icon><br />
+          <p i18n="@@scenariosCannedDesc">
+            See model answers to specific question-based scenarios.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      -->
+      <mat-card
+        fxFlexAlign="center"
+        class="child-2"
+        [routerLink]="['/private']"
+        routerLinkActive="router-link-active"
+      >
+        <mat-card-title i18n="@@scenariosMyTitle">
+          My Scenarios
+        </mat-card-title>
+        <mat-card-content>
+          <br /><fa-icon class="model-icon" [icon]="faUser"></fa-icon><br />
+          <p i18n="@@scenariosMyDesc">
+            Visualize, manage and share your own model scenarios.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </section>
+</div>
+
+<!-- Semantic Context-->
+<!--
+<ngx-json-ld [json]="schema"></ngx-json-ld>
+-->
+
+

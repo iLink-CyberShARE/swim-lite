@@ -1,0 +1,139 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+  <p i18n="@@loading">Loading...</p>
+</div>
+
+<div class="container" *ngIf="!isLoading">
+  <div width="100%">
+    <blockquote i18n="@@hintCompare" class="hintbox design">
+      Select scenarios to cross compare against chosen model outputs.
+    </blockquote>
+  </div>
+
+  <div class="search-bar">
+    <mat-form-field>
+      <mat-label class="search-box"
+        ><mat-icon class="search-box">search</mat-icon>
+        <span i18n="@@searchScenario">Search Scenario</span></mat-label
+      >
+      <input
+        matInput
+        #searchField
+        placeholder="Search"
+        (keyup)="applyFilter($event.target.value)"
+        i18n-placeholder
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="options">
+    <button *ngIf="isAuthenticated"
+      i18n="@@showPublic"
+      class="cat-option-btn-first"
+      [ngClass]="{ 'btn-pressed': scenarioType === 'public' }"
+      (click)="onSelectPublic()"
+      mat-stroked-button
+      matTooltip="Show Public Scenarios"
+      i18n-matTooltip
+    >
+      Public Scenarios
+    </button>
+    <button *ngIf="isAuthenticated"
+      i18n="@@showPrivate"
+      class="cat-option-btn"
+      [ngClass]="{ 'btn-pressed': scenarioType === 'private' }"
+      (click)="onSelectPrivate()"
+      mat-stroked-button
+      matTooltip="Show Private Scenarios"
+      i18n-matTooltip
+    >
+      Private Scenarios
+    </button>
+  </div>
+
+  <div class="error-box" *ngIf="errorText !== ''">
+    <p>{{ errorText }}</p>
+  </div>
+
+  <div class="table-container" *ngIf="errorText === ''">
+    <table
+      mat-table
+      [dataSource]="tableSource"
+      matSort
+      class="mat-elevation-z8"
+      i18n-matTooltip
+    >
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <th i18n="@@selectColumn" mat-header-cell *matHeaderCellDef>Select</th>
+        <td mat-cell *matCellDef="let row">
+          <mat-checkbox
+            (click)="$event.stopPropagation()"
+            (change)="$event ? selection.toggle(row) : null"
+            [checked]="selection.isSelected(row)"
+          >
+          </mat-checkbox>
+        </td>
+      </ng-container>
+
+      <!-- Name column -->
+      <ng-container matColumnDef="name">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort alphabetically by scenario name"
+          i18n-matTooltip
+          i18n
+        >
+          Name
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b> {{ element.name }} </b>
+        </td>
+      </ng-container>
+
+      <!-- run column -->
+      <ng-container matColumnDef="run">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort by scenario run date"
+          i18n-matTooltip
+          i18n
+        >
+          Run Date
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b> {{ element.run | dotToDate | date: "medium" }} </b>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="scenariosTableColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: scenariosTableColumns"></tr>
+    </table>
+  </div>
+
+  <mat-paginator *ngIf="errorText === ''"
+    (page)="onPageChange($event)"
+    [pageSizeOptions]="[5]"
+    showFirstLastButtons
+  ></mat-paginator>
+
+  <div class="footer-buttons">
+    <button
+      mat-flat-button
+      [disabled]="selection.selected.length < 1"
+      i18n="@@compare"
+      (click)="onCompareClick()"
+      [mat-dialog-close]="selectedScenarioIds"
+      color="accent"
+    >
+      Compare
+    </button>
+    <button i18n="@@cancelButton" mat-button (click)="onNoClick()">
+      Cancel
+    </button>
+  </div>
+</div>

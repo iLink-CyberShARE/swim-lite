@@ -1,0 +1,174 @@
+.home-header-background{
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../assets/img/caballo_lake_2.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: hsla(225,75%,16%,0.40);
+  background-blend-mode: overlay;
+  width: 100%;
+}
+
+.home-about{
+  margin-bottom: 20px;
+}
+
+.header-button{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.header-icon{
+  width: 200px;
+  height: 200px;
+}
+
+.home-header-section{
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+.home-header-headline{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 56px;
+  margin: 15px 5px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  margin: 10px 0 30px;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title-center{
+  text-align: center;
+}
+
+.justified-text{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.home-content-background{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 28px;
+  color: rgba(0,0,0,0.85);
+}
+
+.home-models p{
+  font-size: 16px;
+}
+
+.home-scenarios p{
+  font-size: 16px;
+}
+
+.home-events p{
+  font-size: 16px;
+}
+
+.home-models mat-card{
+  margin: 20px;
+  min-height: 300px;
+  max-width: 350px;
+  text-align: center;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.home-events mat-card-footer{
+  margin-bottom: 15px;
+}
+
+.home-events mat-card{
+  margin: 20px;
+  min-height: 300px;
+  max-width: 350px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.home-scenarios mat-card{
+  margin: 20px;
+  min-height: 300px;
+  max-width: 350px;
+  text-align: center;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: auto;
+  border: 1px solid blue;
+}
+
+.flex-item {
+  background-color: tomato;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.mat-icon {
+  width: auto;
+}
+
+.model-icon{
+  font-size: 150px;
+  color: #6171c8;
+  filter: drop-shadow(1px 1px rgb(2, 1, 63));
+}
+
+.img-adjust{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.header-button-inner {
+  font-size: 24px;
+  font-weight: 250;
+  padding: 15px;
+  border-radius: 0px;
+}
+

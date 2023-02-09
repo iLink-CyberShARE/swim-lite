@@ -1,0 +1,36 @@
+<div class="login-box">
+  <img src="assets/img/logo-hs.png" />
+  <div class="isa_error" *ngIf="isError">
+      {{errorMessage}}
+  </div>
+  <div class="isa_success" *ngIf="isSignedIn">
+    Signed in successfully! You will be redirected shortly to your private scenarios...
+  </div>
+  <div class="isa_info" *ngIf="isValidating">
+    Validating Token...
+  </div>
+  <h3 class="page-title">Sign In</h3>
+  <div class="form-in">
+  <button *ngIf="!isSignedIn || isValidating" style="text-align: center" class="btn btn-default" type="submit">
+    <a [href]="loginEndpoint">Login with Hydroshare</a>
+  </button>
+  </div>
+  <div class="hs-footer">
+    <p>
+      If you don't have an account you can
+      <a target="_blank" href="https://www.hydroshare.org/sign-up/"
+        >join HydroShare</a
+      >
+      now.
+    </p>
+    <p>
+      You can also
+      <a
+        target="_blank"
+        href="https://www.hydroshare.org/accounts/password/reset/?next=/accounts/update/"
+        >reset your password</a
+      >
+      if you've forgotten it.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,188 @@
+<mat-card>
+  <mat-card-title i18n="@@regTitle">User Registration</mat-card-title>
+  <mat-card-subtitle i18n="@@reqFields">* required fields</mat-card-subtitle>
+  <mat-card-content>
+    <form
+      style="align-content: center;"
+      #registerForm="ngForm"
+      (ngSubmit)="onSubmit(registerForm)"
+      class="example-form"
+    >
+      <table>
+        <tr>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="First name"
+                i18n-placeholder
+                type="text"
+                id="firstname"
+                ngModel
+                name="firstname"
+                required
+              />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Last Name"
+                i18n-placeholder
+                type="text"
+                id="lastname"
+                ngModel
+                name="lastname"
+                required
+              />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="E-mail Address"
+                i18n-placeholder
+                type="email"
+                id="email"
+                ngModel
+                name="email"
+                required
+                email
+              />
+              <mat-error *ngIf="email.invalid">
+                <span>Invalid Email Format</span>
+              </mat-error>
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Institution"
+                i18n-placeholder
+                type="text"
+                id="institution"
+                ngModel
+                name="institution"
+              />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Department"
+                i18n-placeholder
+                type="text"
+                id="department"
+                ngModel
+                name="department"
+              />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Water Related Role"
+                i18n-placeholder
+                type="text"
+                id="role"
+                ngModel
+                name="role"
+              />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Password"
+                i18n-placeholder
+                [type]="hide ? 'password' : 'text'"
+                id="password"
+                ngModel
+                name="password"
+                minlength="8"
+                required
+              />
+              <button
+                mat-icon-button
+                matSuffix
+                (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide"
+              >
+                <mat-icon>{{
+                  hide ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Confirm Password"
+                i18n-placeholder
+                [type]="hideConfirmation ? 'password' : 'text'"
+                id="password2"
+                minlength="8"
+                ngModel
+                name="password2"
+                required
+              />
+              <button
+                mat-icon-button
+                matSuffix
+                (click)="hideConfirmation = !hideConfirmation"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hideConfirmation"
+              >
+                <mat-icon>{{
+                  hideConfirmation ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="agreement-box">
+              <mat-checkbox  name="agreementBox"  [(ngModel)]="isAgreed" class="check-box"></mat-checkbox>
+              <span i18n>I agree with the <a href="https://swim.cybershare.utep.edu/en/policy" target="_blank">SWIM Web Privacy Policy</a></span>
+            </div>
+          </td>
+        </tr>
+
+        <tr *ngIf="submitError">
+          <td colspan="2">
+            <span class="error">{{ getErrorMessage() }}</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <button
+              mat-stroked-button
+              color="primary"
+              type="submit"
+              i18n
+              [disabled] = "!isAgreed"
+            >
+              Register
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </mat-card-content>
+</mat-card>

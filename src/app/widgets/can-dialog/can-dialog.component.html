@@ -1,0 +1,38 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+  <p i18n="@@loading">Loading...</p>
+</div>
+
+<div *ngIf="!isLoading" class="dialog-form">
+  <div mat-dialog-content>
+    <h3 i18n="@@createCanTitle">Create Canned Scenario</h3>
+    <div class="options-form">
+      <mat-form-field appearance="fill">
+        <mat-label i18n="@@canName">Name</mat-label>
+        <input matInput [(ngModel)]="name" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label i18n="@@canDescription">Description</mat-label>
+        <textarea rows="5" matInput [(ngModel)]="description" required></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label i18n="canShowOutputs">Show Outputs</mat-label>
+        <mat-select  multiple [(value)]="selectedOutputList">
+          <mat-option *ngFor="let output of outputList" [value]="output.varName">{{output.varinfo[lanIndex].varLabel}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-checkbox i18n="@@canHideTools" [(ngModel)]="hideTools">Hide Dynamic Tools</mat-checkbox>
+    </div>
+  </div>
+  <div *ngIf="response !== ''" class="response-box" [ngClass]="responseClass">
+    <p>{{response}}</p>
+  </div>
+  <div mat-dialog-actions class="down-buttons">
+    <button i18n="@@createButton" style="margin-right: 5px;" [disabled]="name === '' || description ==='' || selectedOutputList.length < 1" color="primary" mat-stroked-button (click)="onCreate()">
+      Create
+    </button>
+    <button i18n color="warn" mat-stroked-button (click)="onNoClick()">
+      Close
+    </button>
+  </div>
+</div>

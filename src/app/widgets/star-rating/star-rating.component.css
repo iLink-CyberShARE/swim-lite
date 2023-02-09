@@ -1,0 +1,18 @@
+.rating-container{
+  text-align: center;
+  margin: auto;
+}
+
+li {
+  display: inline;
+  color: darkgoldenrod;
+  font-size: 20px;
+}
+
+.star-icon {
+  margin: 5px;
+}
+
+h3{
+  font-size: 14px;
+}

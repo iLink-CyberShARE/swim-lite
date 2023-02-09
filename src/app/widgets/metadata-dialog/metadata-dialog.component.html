@@ -1,0 +1,17 @@
+<div class="dialog-form">
+  <div mat-dialog-content>
+    <h3 i18n="@@metadataTitle">Scenario Metadata</h3>
+    <p i18n="@@identifierLabel"><b>Identifier</b><br>{{ data._id }}</p>
+    <p i18n="@@nameLabel"><b>Name</b><br>{{ data.name }}</p>
+    <p i18n="@@descLabel"><b>Description</b><br>{{ data.description }}</p>
+    <p i18n="@@statusLabel"><b>Status</b><br>{{ data.status }}</p>
+
+    <h3 i18n="@@modelMeta">Model Metadata</h3>
+    <p i18n="@@identifierLabel2"><b>Identifier</b><br>{{ data.modelSettings[0].modelID }}</p>
+  </div>
+  <div mat-dialog-actions class="down-buttons">
+    <button i18n color="primary" mat-button (click)="onNoClick()">
+      Close
+    </button>
+  </div>
+</div>

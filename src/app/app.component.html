@@ -1,0 +1,24 @@
+<!-- Main Navigation Bar-->
+<mat-sidenav-container class="all-wrap">
+
+    <mat-sidenav #sidenav role="navigation">
+        <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content fxLayout="column">
+
+      <!-- Header menu -->
+      <app-header (sidenavToggle)="sidenav.toggle()" class="mat-elevation-z6"></app-header>
+
+      <!-- Routes will be rendered here -->
+      <main class="content">
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
+      </main>
+
+      <!-- Footer -->
+      <app-footer fxFlexOffset="auto"></app-footer>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+

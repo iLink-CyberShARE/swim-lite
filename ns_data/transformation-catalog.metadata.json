@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"321e324168da4c78b2e27e89362d6bc4","collectionName":"transformation-catalog","type":"collection"}

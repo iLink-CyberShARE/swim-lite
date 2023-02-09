@@ -1,0 +1,254 @@
+
+<header class="bm-intro-header-background">
+  <div class="bm-intro-header-section">
+    <div class="home-header-headline">
+      <h1 i18n="@@privateTitle">My Scenarios</h1>
+      <fa-icon class="header-icon" [icon]="faImage"></fa-icon><br />
+    </div>
+  </div>
+</header>
+
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+  <p i18n="@@loading">Loading...</p>
+</div>
+
+<div class="main-container" *ngIf="!isLoading">
+
+  <div style="width: 100%;">
+    <mat-form-field class="search-box mat-elevation-z2">
+      <mat-label
+          ><mat-icon>search</mat-icon> <span i18n="@@searchPlaceholderPublic">Search</span></mat-label>
+      <input
+          matInput
+          (keyup)="applyFilter($event.target.value)"
+          placeholder="Search"
+          i18n-placeholder
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="table-container mat-elevation-z8">
+    <table mat-table [dataSource]="scenarioTableSource" matSort>
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort alphabetically by name"
+          i18n-matTooltip
+          i18n="@@nameCol"
+        >
+          Name
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b> {{ element.name }} </b>
+        </td>
+      </ng-container>
+
+      <!-- Start Date Column -->
+      <ng-container matColumnDef="startedAtTime">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort by date"
+          i18n-matTooltip
+          i18n="@@startCol"
+        >
+          Execution Start
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b> {{ element.startedAtTime | dotToDate | date:'medium' }} </b>
+        </td>
+      </ng-container>
+
+      <!-- Ended at Time -->
+      <ng-container matColumnDef="endedAtTime">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort by date"
+          i18n-matTooltip
+          i18n="@@endCol"
+          >
+          Execution End
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b> {{ element.endedAtTime | dotToDate | date:'medium' }} </b>
+        </td>
+      </ng-container>
+
+      <!-- Status -->
+      <ng-container matColumnDef="status">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort by status"
+          i18n-matTooltip
+          i18n="@@statusCol"
+        >
+          Status
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b [ngClass]="{'success-status': element.status === 'complete'}">
+            {{ element.status }} </b>
+        </td>
+      </ng-container>
+
+      <!-- View on User Workflow -->
+      <ng-container matColumnDef="ID1">
+        <th
+          style="text-align: center;"
+          mat-header-cell
+          *matHeaderCellDef
+          matTooltip="View custom scenario results in workflow mode"
+          i18n-matTooltip
+          i18n="@@outputsCol"
+        >
+          All Outputs
+        </th>
+        <td style="text-align: center;" mat-cell *matCellDef="let element">
+          <button
+            matTooltip="Click to view results in user workflow"
+            i18n-matTooltip
+            (click) = "onAllOutputs(element._id)"
+            mat-icon-button>
+            <mat-icon>dashboard</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+
+      <!-- View Scenario Metadata -->
+      <ng-container matColumnDef="ID2">
+        <th
+          style="text-align: center;"
+          mat-header-cell
+          *matHeaderCellDef
+          matTooltip="Scenario and model metadata"
+          i18n-matTooltip
+          i18n="@@metadataCol"
+          >
+          Metadata
+        </th>
+        <td style="text-align: center;" mat-cell *matCellDef="let element">
+          <button mat-icon-button
+            matTooltip="Click to view scenario metadata"
+            i18n-matTooltip
+            (click) = "onViewMetadata(element)">
+            <mat-icon>amp_stories</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+
+      <!-- Share View Link -->
+      <ng-container matColumnDef="ID3">
+        <th
+          style="text-align: center;"
+          mat-header-cell
+          *matHeaderCellDef
+          matTooltip="Share results"
+          i18n-matTooltip
+          i18n="@@shareCol"
+          >
+          Share
+        </th>
+        <td style="text-align: center;" mat-cell *matCellDef="let element">
+          <button mat-icon-button
+            matTooltip="Click to generate a link for sharing results"
+            (click) = "onShareLink(element._id)"
+            i18n-matTooltip
+            >
+            <mat-icon>share</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <!-- HydroShare Publish -->
+      <ng-container matColumnDef="ID4">
+        <th
+          style="text-align: center;"
+          mat-header-cell
+          *matHeaderCellDef
+          matTooltip="Publish results on Hydroshare"
+          i18n-matTooltip
+          i18n
+          >
+          HydroShare
+        </th>
+        <td style="text-align: center;" mat-cell *matCellDef="let element">
+          <button mat-icon-button
+            matTooltip="Create a resource on HydroShare for publication"
+            (click) = "onPublish(element._id)"
+            i18n-matTooltip
+            >
+            <mat-icon>open_in_new</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <!-- Can Scenario -->
+      <ng-container matColumnDef="ID5" *ngIf="getCont()===1">
+        <th
+          style="text-align: center;"
+          mat-header-cell
+          *matHeaderCellDef
+          matTooltip="Can Scenario"
+          i18n-matTooltip
+          i18n="@@canCol"
+          >
+          Can
+        </th>
+        <td style="text-align: center;" mat-cell *matCellDef="let element">
+          <button mat-icon-button
+            matTooltip="Create a canned scenario from this run"
+            i18n-matTooltip
+            (click) = "onCanScenario(element._id)"
+            >
+            <mat-icon>save_alt</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <!-- Delete Scenario -->
+      <ng-container matColumnDef="ID6">
+        <th
+          style="text-align: center;"
+          mat-header-cell
+          *matHeaderCellDef
+          matTooltip="Delete scenarios"
+          i18n-matTooltip
+          i18n="@@deleteCol"
+          >
+          Delete
+        </th>
+        <td style="text-align: center;" mat-cell *matCellDef="let element">
+          <button mat-icon-button
+            matTooltip="Click here to delete scenario"
+            i18n-matTooltip
+            (click) = "onDeleteScenario(element._id)"
+            >
+            <mat-icon>remove_circle</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="listingColumns"></tr>
+      <tr
+        mat-row
+        *matRowDef="let row; columns: listingColumns"
+        class="input-row"
+      ></tr>
+    </table>
+
+    <mat-paginator
+      [pageSizeOptions]="[10, 20, 40, 60]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+</div>

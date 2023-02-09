@@ -1,0 +1,162 @@
+.table-toolbar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.visualization-types {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.visualization-types button {
+  width: 30%;
+}
+
+.toolbar-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.toolbar-row button {
+  min-width: 120px;
+}
+
+.table-toolbar-right{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-top: 1rem;
+  margin-bottom: 4px;
+  text-align: right;
+  display: block;
+  width: 50%;
+  z-index: 3;
+}
+
+.moving-avg-slider{
+  width: 100%;
+}
+
+.table-toolbar-left{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-top: 1rem;
+  margin-bottom: 4px;
+  text-align: left;
+  display: block;
+  width: 50%;
+  z-index: 3;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+mat-card-title{
+  color: #3f51b5;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-subtitle {
+  color: black;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+}
+
+.detail-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail-top > div {
+  flex: 1 0 45%;
+}
+
+.appendable-choices {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold-me {
+  font-weight: bold;
+}
+
+.metadata {
+  text-align: left;
+}
+
+.plot-box {
+  max-height: 800px;
+}
+
+.visualization-selected {
+  color: #ff4081;
+}
+
+.visualization-selected-2 {
+  background-color: #ff4081;
+}
+
+.options-text {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.visualization-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.appendable-list.design {
+  border-top-color: #3f51b5;
+}
+
+.appendable-list {
+  margin: 10px 0px 0.6em 0px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  color: #1b1b1b;
+  background: #ebebf2;
+  border-top: 0.3125em solid #3f51b5;
+  border-top-color: #3f51b5;
+  border-radius: 3px;
+}
+
+.append-label{
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.plot-hint{
+  color: #ff4081;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 5px;
+}

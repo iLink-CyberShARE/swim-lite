@@ -1,0 +1,13 @@
+<mat-card class="metadata-box">
+  <mat-card-header>
+    <mat-card-title i18n="@@summaryScenario">Scenario: {{ name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="description">{{ description }} </p>
+    <!-- <p><b>Identifier:</b>  {{ identifier }}</p> -->
+    <p i18n="summaryStatus"><b>Status:</b> {{ status }}</p>
+    <p i18n="summaryStartTime"><b>Run Start Time:</b> {{ start | dotToDate}}</p>
+    <p i18n="summaryEndTime"><b>Run End Time:</b> {{ end | dotToDate}}</p>
+    <p *ngIf="isStartDefined" i18n="summaryProjectionStart"><b>Projection Start:</b> {{ pstart }}</p>
+  </mat-card-content>
+</mat-card>

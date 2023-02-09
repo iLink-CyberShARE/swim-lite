@@ -1,0 +1,15 @@
+.error{
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.agreement-box{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.check-box{
+  margin: 5px;
+  font-size: 18px;
+}

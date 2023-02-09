@@ -1,0 +1,343 @@
+<!-- Loading widget here for operations and so on-->
+
+<div class="container">
+  <div *ngIf="isLoading" class="spinner-container">
+    <mat-spinner></mat-spinner>
+    <p i18n>Loading...</p>
+    <p>{{ this.loadingLabel }}</p>
+  </div>
+
+  <div class="form-container" *ngIf="!isLoading">
+    <mat-card class="form-card">
+      <div class="icon-options">
+        <button
+          mat-flat-button
+          color="primary"
+          class="fieldButton"
+          [routerLink]="['/private']"
+        >
+          <span i18n>Go Back</span>
+        </button>
+
+      </div>
+      <mat-card-header>
+        <mat-card-title i18n>HydroShare Resource Form </mat-card-title>
+        <mat-card-subtitle
+          ><span i18n>SWIM Scenario: </span> {{ scenarioID }}</mat-card-subtitle
+        >
+      </mat-card-header>
+
+      <form #hsForm="ngForm" (ngSubmit)="onSubmit(hsForm)" class="example-form">
+        <mat-card-content>
+          <div class="content-box">
+            <!-- success box will go here -->
+            <div class="isa_success" *ngIf="isSuccess">
+              <span i18n>HS Resource updated successfully:</span> <br />
+              <a target="_blank" [href]="hsResource.url">{{
+                hsResource.url
+              }}</a>
+            </div>
+            <!-- error box will go here -->
+            <div class="isa_error" *ngIf="isError">
+              <p *ngFor="let errorMessage of errorMessages">
+                {{ errorMessage }}
+              </p>
+            </div>
+
+            <mat-form-field appearance="fill">
+              <mat-label i18n>Title</mat-label>
+              <input
+                name="title"
+                style="width: 100%"
+                matInput
+                [(ngModel)]="hsResource.title"
+                minlength="10"
+                required
+              /> </mat-form-field
+            ><br />
+
+            <mat-form-field *ngIf="isPublished" appearance="fill">
+              <mat-label i18n>Resource URL</mat-label>
+              <input
+                name="url"
+                disabled="true"
+                matInput
+                [(ngModel)]="hsResource.url"
+              />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label i18n>Resource Type</mat-label>
+              <input
+                name="type"
+                disabled="true"
+                matInput
+                [(ngModel)]="hsResource.resource_type"
+              />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label i18n>Abstract</mat-label>
+              <textarea
+                name="abstract"
+                rows="5"
+                matInput
+                [(ngModel)]="hsResource.abstract"
+                minlength="10"
+                required
+              ></textarea>
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label i18n>Subject Keywords</mat-label>
+              <mat-chip-list #chipList aria-label="Keyword selection">
+                <mat-chip
+                  *ngFor="let keyword of hsResource.subjects"
+                  [selectable]="selectable"
+                  [removable]="removable"
+                  (removed)="remove(keyword)"
+                >
+                  {{ keyword }}
+                  <mat-icon matChipRemove *ngIf="removable"><span i18n>cancel</span></mat-icon>
+                </mat-chip>
+                <input
+                  placeholder="New keyword..."
+                  [matChipInputFor]="chipList"
+                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                  [matChipInputAddOnBlur]="addOnBlur"
+                  (matChipInputTokenEnd)="add($event)"
+                />
+              </mat-chip-list>
+            </mat-form-field>
+            <div>
+              <h3 i18n>Contributors</h3>
+              <!-- dynamic widget here -->
+              <div
+                *ngFor="
+                  let contributor of hsResource.contributors;
+                  let i = index
+                "
+              >
+                <p i18n>Contributor No.{{ i + 1 }}</p>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Name</mat-label>
+                  <input
+                    name="contributor_name"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.contributors[i].name"
+                    required
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Email</mat-label>
+                  <input
+                    name="contributor_email"
+                    type="email"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.contributors[i].email"
+                    required
+                    email
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Organization</mat-label>
+                  <input
+                    name="contributor_organization"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.contributors[i].organization"
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Address</mat-label>
+                  <input
+                    name="contributor_address"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.contributors[i].address"
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Phone</mat-label>
+                  <input
+                    name="contributor_phone"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.contributors[i].phone"
+                  />
+                </mat-form-field>
+              </div>
+              <button
+                type="button"
+                mat-flat-button
+                color="primary"
+                class="fieldButton"
+                (click)="addContributor()"
+              >
+                <span i18n>+ Add Contributor</span>
+              </button>
+              <button
+                type="button"
+                *ngIf="contributors"
+                mat-flat-button
+                color="primary"
+                class="fieldButton"
+                (click)="removeContributor()"
+              >
+                <span i18n>- Remove Contributor</span>
+              </button>
+            </div>
+            <div>
+              <h3 i18n>Awards</h3>
+              <div *ngFor="let award of hsResource.awards; let i = index">
+                <p i18n>Award No.{{ i + 1 }}</p>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Funding Agency</mat-label>
+                  <input
+                    name="award_agency"
+                    type="text"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.awards[i].funding_agency_name"
+                    required
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Project Title</mat-label>
+                  <input
+                    name="award_title"
+                    type="text"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.awards[i].title"
+                    required
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Award Number</mat-label>
+                  <input
+                    name="award_number"
+                    type="number"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.awards[i].number"
+                    required
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Funding Agency URL</mat-label>
+                  <input
+                    name="award_url"
+                    type="url"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.awards[i].funding_agency_url"
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <button
+                type="button"
+                mat-flat-button
+                color="primary"
+                class="fieldButton"
+                (click)="addAward()"
+              >
+                <span i18n>+ Add Award</span>
+              </button>
+              <button
+                *ngIf="awards"
+                type="button"
+                mat-flat-button
+                color="primary"
+                class="fieldButton"
+                (click)="removeAward()"
+              >
+                <span i18n>- Remove Award</span>
+              </button>
+            </div>
+            <div>
+              <h3 i18n>Rights</h3>
+              <div *ngIf="rights">
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>Statement</mat-label>
+                  <input
+                    name="right_statement"
+                    type="text"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.rights.statement"
+                    required
+                  />
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                  <mat-label i18n>URL</mat-label>
+                  <input
+                    name="right_url"
+                    type="url"
+                    style="width: 100%"
+                    matInput
+                    [(ngModel)]="hsResource.rights.url"
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <button
+                type="button"
+                mat-flat-button
+                *ngIf="!rights"
+                color="primary"
+                class="fieldButton"
+                (click)="addRight()"
+              >
+                <span i18n>+ Add Right</span>
+              </button>
+              <button
+                type="button"
+                *ngIf="rights"
+                mat-flat-button
+                color="primary"
+                class="fieldButton"
+                (click)="removeRight()"
+              >
+                <span i18n>- Remove Right</span>
+              </button>
+            </div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions style="text-align: right">
+          <button
+            mat-flat-button
+            color="accent"
+            *ngIf="!isPublished"
+            type="submit"
+          >
+            <span i18n>Create Resource</span>
+          </button>
+          <button
+            type="button"
+            (click)="onUpdate()"
+            mat-flat-button
+            color="accent"
+            *ngIf="isPublished"
+          >
+            <span i18n>Update Resource</span>
+          </button>
+          <button
+            style="margin-left: 5px"
+            type="button"
+            (click)="onDeleteResource()"
+            mat-flat-button
+            color="warn"
+            *ngIf="isPublished"
+          >
+            <span i18n>Delete Resource</span>
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </div>
+</div>

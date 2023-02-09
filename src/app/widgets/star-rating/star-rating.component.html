@@ -1,0 +1,20 @@
+<div class="rating-container">
+  <h3>{{ targetOutputLabel }}</h3>
+  <p>{{ selectedRatingLabel }}</p>
+  <li (click)="onSelectedStar(1)">
+    <fa-icon class="star-icon" [icon]="starIcons[0]"></fa-icon>
+  </li>
+  <li (click)="onSelectedStar(2)">
+    <fa-icon class="star-icon" [icon]="starIcons[1]"></fa-icon>
+  </li>
+  <li (click)="onSelectedStar(3)">
+    <fa-icon class="star-icon" [icon]="starIcons[2]"></fa-icon>
+  </li>
+  <li (click)="onSelectedStar(4)">
+    <fa-icon class="star-icon" [icon]="starIcons[3]"></fa-icon>
+  </li>
+  <li (click)="onSelectedStar(5)">
+    <fa-icon class="star-icon" [icon]="starIcons[4]"></fa-icon>
+  </li>
+  <br><br>
+</div>

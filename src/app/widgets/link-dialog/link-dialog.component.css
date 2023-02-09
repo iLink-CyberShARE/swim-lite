@@ -1,0 +1,35 @@
+.dialog-form {
+  min-width: 200px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.copy-btn {
+  height: 45px;
+}
+
+.down-buttons{
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.down-buttons button{
+  text-align: center;
+}
+
+.done-container{
+  text-align: center;
+  color: forestgreen;
+  margin-bottom: 15px;
+}
+
+.done-container mat-icon{
+  font-size: 30px;
+}
+
+.legend{
+  width: 100%;
+  color: forestgreen;
+  text-align: center;
+}

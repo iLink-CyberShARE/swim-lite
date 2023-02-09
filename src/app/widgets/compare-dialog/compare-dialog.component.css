@@ -1,0 +1,84 @@
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.search-bar {
+  width: 100%;
+}
+
+.footer-buttons {
+  text-align: right;
+}
+
+.footer-buttons button{
+  margin-left: 8px;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.spinner-container{
+  margin-top: 30px;
+  padding: 70px;
+  text-align: center;
+}
+
+.hintbox.design{
+  border-top-color: #ff4081;
+}
+
+.hintbox {
+  margin: 10px 0px .6em 0px;
+  padding: 0.8em 1em 1em 0.8em;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  color: #1b1b1b;
+  background:#ebebf2;
+  border-top: .3125em solid #ff4081;
+  border-top-color: #ff4081;
+  border-radius: 3px;
+  text-align: center;
+  font-style: italic;
+}
+
+.options {
+  margin-bottom: 10px;
+}
+
+.cat-opton-btn-first{
+  min-width: 120px;
+}
+
+.cat-option-btn{
+  margin-left: 5px;
+  min-width: 120px;
+}
+
+.btn-pressed {
+  color: #ff4081;
+}
+
+.error-box {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}

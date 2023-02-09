@@ -1,0 +1,183 @@
+footer {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-top{
+  padding: 25px 2.5em 30px 2.5em;
+  background: #3f51b5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-bottom {
+  padding: 20px 2.5rem 20px 2.5rem;
+  background-color: #292a33;
+}
+
+.footer-bottom a{
+  color: #428bca;
+  text-decoration: none;
+}
+
+.footer-bottom a:visited{
+  color: #428bca;
+  text-decoration: none;
+}
+
+.b-left{
+  text-align: left;
+}
+
+.b-left a{
+  color: #fff;
+  text-decoration: wavy;
+  font-style: italic;
+}
+
+.b-left a:active{
+  color: #fff;
+}
+
+.b-left a:hover{
+  color: beige;
+}
+
+.b-right{
+  margin: auto;
+}
+
+ol, ul, dl {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer_menu_contact{
+  text-align: left;
+}
+
+.menu-head{
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 15px 0px 10px 0px;
+}
+
+.footer_menu ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_menu_contact ul li {
+  padding: 5px 0px;
+}
+
+.footer_menu_contact ul li span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_menu_contact ul li span a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_menu_contact ul li span {
+  margin-left: 10px;
+}
+
+/* For phones */
+@media only screen and (max-width: 500px) {
+
+  .t-left{
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    min-width: fit-content;
+  }
+
+  .m-middle{
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    min-width: fit-content;
+  }
+
+  .b-left{
+    font-size: 15px;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .b-right{
+    margin: auto;
+    width: fit-content
+  }
+
+  .r-right{
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    min-width: fit-content;
+  }
+
+  .logo-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .logo img{
+    width: 50%;
+  }
+}
+
+/* Bigger screens */
+@media only screen and (min-width: 501px) {
+  .t-left{
+    text-align: left;
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .m-middle{
+    text-align: left;
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .b-left{
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-right: 20%;
+    text-align: left;
+  }
+
+  .r-right{
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    width: 33%;
+  }
+
+  .logo-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo img{
+    width: 50%;
+  }
+}
+
+
+
+

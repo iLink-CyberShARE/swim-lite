@@ -1,0 +1,14 @@
+.error-box{
+  margin: auto;
+  text-align: center;
+  color: darkgrey;
+  margin-bottom: 100px;
+}
+
+.error-icon{
+  padding-top: 150px;
+  margin: auto;
+  text-align: center;
+  color: #000;
+  font-size: 200px;
+}

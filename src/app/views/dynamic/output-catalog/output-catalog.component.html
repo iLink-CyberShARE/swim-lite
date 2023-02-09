@@ -1,0 +1,263 @@
+<section
+  class="catalog-container"
+  *ngIf="outputListing.length > 0 && mode === 'catalog'"
+>
+  <div
+    width="100%"
+    class="child-center category-container categories"
+    *ngIf="outputCategories.length > 1"
+  >
+    <span i18n="@@outputCatTitle" class="title-categories"
+      >Output Categories</span
+    ><br />
+    <button
+      i18n="@@all"
+      [ngClass]="{ 'selected-category': selectedOutputCat === '' }"
+      matTooltip="View all output variables"
+      i18n-matTooltip
+      class="button-center-cats"
+      (click)="applyFilter('')"
+      mat-raised-button
+      color="primary"
+    >
+      All
+    </button>
+    <button
+      [ngClass]="{ 'selected-category': category === selectedOutputCat }"
+      matTooltip="Filter outputs by category"
+      i18n-matTooltip
+      class="button-center-cats"
+      *ngFor="let category of outputCategories"
+      (click)="applyFilterColumn('Category', category)"
+      mat-raised-button
+      color="primary"
+    >
+      {{ category }}
+    </button>
+  </div>
+
+  <mat-form-field>
+    <mat-label class="search-box"
+      ><mat-icon class="search-box">search</mat-icon>
+      <span i18n="@@searchOutput">Search Output</span></mat-label
+    >
+    <input
+      matInput
+      #searchField
+      (keyup)="applyFilter($event.target.value)"
+      (focus)="setupFilter('Label')"
+      placeholder="Search"
+      i18n-placeholder
+    />
+  </mat-form-field>
+
+  <div class="catalog-options">
+    <button
+      i18n="@@recommend"
+      i18n-matTooltip
+      *ngIf="recommAvailable"
+      class="cat-option-btn-first"
+      mat-stroked-button
+      matTooltip="Sort by recommendation"
+      (click)="sortByRecommender()"
+    >
+      Recommend
+    </button>
+
+    <button
+      i18n="@@viewSelectedButton"
+      class="cat-option-btn"
+      (click)="onViewSelected()"
+      mat-stroked-button
+      matTooltip="Show data values of selected outputs"
+      i18n-matTooltip
+      [disabled]="selection.selected.length < 1"
+    >
+      View Selected
+    </button>
+
+    <button
+      mat-stroked-button
+      class="cat-option-btn"
+      matTooltip="Compare selected outputs against results from other scenario runs"
+      i18n-matTooltip
+      (click)="onCompare()"
+      [disabled]="selection.selected.length < 1"
+      i18n="crossCompareBtn"
+    >
+      Cross-Compare
+    </button>
+
+    <button
+      i18n="@@deselectButton"
+      mat-stroked-button
+      class="cat-option-btn"
+      matTooltip="Clean all selected marks in table"
+      i18n-matTooltip
+      (click)="onDeselectAll()"
+      [disabled]="selection.selected.length < 1"
+    >
+      Deselect All
+    </button>
+
+    <button
+      i18n="@@resetTableButton"
+      mat-stroked-button
+      class="cat-option-btn"
+      (click)="searchField.value = ''; applyFilter('')"
+      matTooltip="Remove search or category filters"
+      i18n-matTooltip
+    >
+      Reset Table
+    </button>
+
+    <button
+      i18n="@@exportCatButton"
+      *ngIf="selectedOutputCat === ''"
+      mat-stroked-button
+      class="cat-option-btn"
+      (click)="onExportCatalog()"
+      matTooltip="Export output catalog to Excel file"
+      i18n-matTooltip
+    >
+      Export
+    </button>
+  </div>
+
+  <div class="table-container">
+    <table
+      mat-table
+      [dataSource]="outputTableSource"
+      matSort
+      class="mat-elevation-z8"
+      i18n-matTooltip
+    >
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="Select">
+        <th i18n="@@selectColumn" mat-header-cell *matHeaderCellDef>Select</th>
+        <td mat-cell *matCellDef="let row">
+          <mat-checkbox
+            (click)="$event.stopPropagation()"
+            (change)="$event ? selection.toggle(row) : null"
+            [checked]="selection.isSelected(row)"
+          >
+          </mat-checkbox>
+        </td>
+      </ng-container>
+
+      <!-- Label Column -->
+      <ng-container matColumnDef="Label">
+        <th
+          i18n="@@variableColumn"
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort alphabetically by output label"
+          i18n-matTooltip
+        >
+          Output Variable
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <b> {{ element.Label }} </b>
+        </td>
+      </ng-container>
+
+      <!-- Category Column -->
+      <ng-container matColumnDef="Category">
+        <th
+          i18n="@@catColumn"
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          matTooltip="Click to sort alphabetically by category"
+          i18n-matTooltip
+        >
+          Category
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.Category }}</td>
+      </ng-container>
+
+      <!-- Description Column -->
+      <ng-container matColumnDef="Description">
+        <th i18n="@@descColumn" mat-header-cell *matHeaderCellDef>
+          Description
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.Description }}</td>
+      </ng-container>
+
+      <!-- Unit Column -->
+      <ng-container matColumnDef="Units">
+        <th i18n="@@unitColumn" mat-header-cell *matHeaderCellDef>Units</th>
+        <td mat-cell *matCellDef="let element">{{ element.Units }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="outputCatalogColumns"></tr>
+      <tr
+        mat-row
+        *matRowDef="let row; columns: outputCatalogColumns"
+        class="output-row"
+      ></tr>
+    </table>
+  </div>
+
+  <mat-paginator
+    (page)="onPageChange($event)"
+    [pageSizeOptions]="[13, 20, 30]"
+    showFirstLastButtons
+  ></mat-paginator>
+</section>
+
+<section *ngIf="selectedOutputs.length > 0 && mode === 'details'">
+  <div class="top-nav">
+    <button
+      (click)="onBackToCatalog()"
+      mat-raised-button
+      color="primary"
+      class="button-center-cats"
+    >
+      <mat-icon>chevron_left</mat-icon><span i18n="@@backCatButton">Back</span>
+    </button>
+
+    <div width="100%" *ngIf="!hideTools">
+      <blockquote i18n="@@hintOutputDetails" class="hintbox-2 design">
+        "You can append additional model datasets to the visualization by
+        selecting from the Show input and Show Output dropdown lists. Only
+        datasets with the same units are available as an option."
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="catalog-detail-container">
+    <div class="detail-container">
+      <!-- Output Data Details -->
+      <div class="output-detail" *ngFor="let selectedOutput of selectedOutputs">
+        <app-output-detail
+          [selectedOutput]="selectedOutput"
+          [startDate]="modelRunService.getProjectionStart()"
+        ></app-output-detail>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section *ngIf="compareOutputs.length > 0 && mode === 'compare'">
+  <div class="top-nav">
+    <button
+      (click)="onBackToCatalog()"
+      mat-raised-button
+      color="primary"
+      class="button-center-cats"
+    >
+      <mat-icon>chevron_left</mat-icon><span i18n="@@backCatButton">Back</span>
+    </button>
+  </div>
+
+  <div class="catalog-detail-container">
+    <div class="detail-container">
+      <!-- Output Data Details -->
+      <div class="output-detail" *ngFor="let compareOutput of compareOutputs">
+        <app-cross-compare [compareOutput]="compareOutput"></app-cross-compare>
+      </div>
+    </div>
+  </div>
+</section>

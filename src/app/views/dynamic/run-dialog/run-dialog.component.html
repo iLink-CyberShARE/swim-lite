@@ -1,0 +1,68 @@
+<h3 i18n="@@titleRunForm">Model Run Form</h3>
+<div class="dialog-form">
+  <div mat-dialog-content>
+    <mat-form-field class="full-width">
+      <input
+        matInput
+        [(ngModel)]="data.name"
+        placeholder="Scenario Name (10 character minimum)"
+        i18n-placeholder
+        minlength="10"
+        required
+      /> </mat-form-field
+    ><br />
+    <mat-form-field class="full-width">
+      <mat-label i18n="@@comboRoleLabel">Select Water Related Role</mat-label>
+      <mat-select [(ngModel)]="userRole" required>
+        <mat-option *ngFor="let role of roleOptions" [value]="role['en-us']">
+          {{ role[lan] }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <textarea
+        (click)="onDescriptionClick()"
+        rows="5"
+        matInput
+        [(ngModel)]="data.description"
+        placeholder="Scenario Description"
+        i18n-placeholder
+        minlength="20"
+        required
+      ></textarea>
+    </mat-form-field>
+    <div *ngIf="isAuthenticated" class="full-width">
+      <mat-checkbox i18n="@@makePublic" [(ngModel)]="data.isPublic"
+        >Run as Public Scenario</mat-checkbox
+      >
+    </div>
+    <div *ngIf="!isAuthenticated" class="full-width">
+      <mat-checkbox [(ngModel)]="agreement"></mat-checkbox>
+      <span i18n>
+        I agree with the
+        <a href="https://swim.cybershare.utep.edu/en/policy" target="_blank"
+          >SWIM Web Privacy Policy</a
+        ></span
+      >
+    </div>
+  </div>
+  <div mat-dialog-actions style="text-align: right; width: 100%">
+    <button
+      i18n="@@submitButton2"
+      mat-button
+      [disabled]="
+        agreement === false ||
+        data.name.length < 10 ||
+        data.description === '' ||
+        userRole === ''
+      "
+      (click)="onSubmit()"
+      [mat-dialog-close]="data"
+    >
+      Submit
+    </button>
+    <button i18n="@@cancelButton" mat-button (click)="onNoClick()">
+      Cancel
+    </button>
+  </div>
+</div>

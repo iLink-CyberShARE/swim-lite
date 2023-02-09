@@ -1,0 +1,18 @@
+.metadata-box{
+  margin: 25px 10px 25px 10px;
+}
+
+mat-card {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}
+
+mat-card-content {
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+.description{
+  font-size: 16px;
+}

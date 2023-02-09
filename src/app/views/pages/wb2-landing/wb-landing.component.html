@@ -1,0 +1,111 @@
+<div id="top"></div>
+
+<header class="wb-intro-header-background">
+  <div class="wb-intro-header-section">
+    <div class="home-header-headline">
+      <h1 i18n="@@wbTitle1">Middle Rio Grande Basin</h1>
+      <fa-icon class="header-icon" [icon]="faBalanceScale"></fa-icon><br />
+      <h2 i18n>Water Balance Model v2</h2>
+      <div class="header-button">
+        <button
+          i18n="@@wbCreateButton"
+          color="accent"
+          mat-raised-button
+          [routerLink]="['/create-scenario', modelId]"
+        >
+          Create Scenario
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <section class="wb-description">
+    <p i18n>
+      <span class="highlight">The Water Balance Model</span> has a focus on
+      simplicity, with the goal being to help stakeholders understand how
+      changes in climate could influence regional water availability. The water
+      balance model simulates surface water reservoir storage, reservoir
+      releases and storage in groundwater aquifers in the project study area.
+      The project study area includes portions of New Mexico (NM, US), Texas
+      (TX, US), and Chihuahua (CH, MX). The model simulates storages of water
+      through a simple accounting based on storages at the beginning of a
+      simulation period and inflows and outflows throughout the simulation
+      period.
+    </p>
+    <div class="responsive-img">
+      <img i18n-src src="assets/img/wb-diagram.png" class="responsive-img" />
+    </div>
+    <p i18n>
+      The model simulates future time periods, using time series inputs for (a)
+      local precipitation and temperature and (b) San Marcial gauge flows.
+      Demands for surface water releases from Caballo Reservoir are assumed to
+      be the maximum available under the Rio Grande Project 2008 Operating
+      Agreement, which bases releases on water stored in Elephant Butte and
+      Caballo reservoirs and treaty and compact requirements for sharing water
+      between TX (US), NM (US), and CH (MX). Demands from groundwater aquifers
+      are calculated using a base rate of groundwater pumping from each aquifer,
+      based on historical pumping rates, combined with a variable rate, based on
+      historical replacement of surface water shortages with groundwater
+      pumping.
+    </p>
+    <p i18n>
+      <b>Model Engine:</b>
+      <a target="_blank" href=""> Python 3.8</a> <br />
+      The model uses python.
+    </p>
+  </section>
+
+  <section class="publications">
+    <h3 i18n="@@bmPublicationTitle">Publications</h3>
+    <p>
+      Holmes R. N., Mayer A., Gutzler D. S., Garnica Chavira L. <br />
+      Asessing the Effects of Climate Change on Middle Rio Grande Surface Water Supplies Using a Simple Water Balance Reservoir Model <br />
+      Earth Interactions, 26(1), 168–179 <br />
+      <a href="https://doi.org/10.1175/EI-D-21-0025.1"
+        >https://doi.org/10.1175/EI-D-21-0025.1</a
+      >
+
+
+    <p>
+      Holmes, Robyn<br />
+      Water Woes Worsen: Middle Rio Grande Reservoir Modeling Projects Declining
+      Water Availability Under Climate Change Simulations <br />
+      Open Access Master's Thesis, Michigan Technological University, 2022.
+      <br />
+      <a href="https://doi.org/10.37099/mtu.dc.etdr/1351"
+        >https://doi.org/10.37099/mtu.dc.etdr/1351</a
+      >
+    </p>
+  </section>
+
+  <section class="wb-contacts">
+    <h3 i18n="@@ContactsTitle">Contacts</h3>
+    <p i18n>
+      <b>Alex Mayer</b><br />
+      University of Texas at El Paso <br />
+      amayer2@utep.edu <br />
+    </p>
+    <p i18n="@@wbContact2">
+      <b>Luis Garnica</b><br />
+      University of Texas at El Paso <br />
+      lagarnicachavira@utep.edu <br />
+    </p>
+  </section>
+
+  <div class="intro-end">
+    <a
+      target="_blank"
+      href="https://water.cybershare.utep.edu/resources/docs/en2/models/balancev2/"
+      ><button i18n="@@fullDocsBtn" mat-raised-button color="primary">
+        See Detailed Documentation
+      </button></a
+    >
+  </div>
+</div>
+
+<!-- Semantic Context-->
+<!--
+<ngx-json-ld [json]="schema"></ngx-json-ld>
+-->

@@ -1,0 +1,116 @@
+<div id="top"></div>
+
+<header class="wb-intro-header-background">
+  <div class="wb-intro-header-section">
+    <div class="home-header-headline">
+      <h1 i18n>Getting Started with SWIM</h1>
+      <fa-icon class="header-icon" [icon]="faSwimmer"></fa-icon><br />
+      <h2 i18n>Dive in</h2>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <section class="quick-tutorial">
+    <h3 i18n>Customizing your own Scenario</h3>
+    <p i18n>
+      The SWIM interface makes available a set of scientific models which you can customize using scenarios to project
+      into the future. SWIM includes predefined scenarios to get you started; each predefined scenario defines the value for one or many
+      input parameters of the model. Models have predefined scenarios grouped in categories, e.g., climate, technology and recovery.
+    </p>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/model_landings.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n><span class="bold">Step 1: </span>
+          On the main navigation bar, place your pointer over the <span class="bold">Models</span> dropdown menu. A list of
+          scientific models will be displayed. For this tutorial, select the <span class="bold">Water Balance Model</span>.
+        </p>
+        <p i18n>A landing page with infomation about the model will be displayed. To access the customization workflow, press the
+          <span class="bold">Create Scenario</span> button located in the banner at the top of the page.
+        </p>
+      </div>
+    </div>
+
+    <p i18n>The customization workflow is a three-step process: Scenario Selection, Run Model and View Results.</p>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/scenario_select.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n><span class="bold">Step 2: </span>
+          On the <span class="bold">Select Scenarios</span> step of the workflow, you can select one predefined scenario from each category.
+          To select a scenario, press the representative image of the scenario. For this tutorial select a scenario combination from each
+          category as follows: Climate - "Extreme Stress", Evaporation - "Default", and Reservoir Operation - "Minimum reservoir storage at 20% of capacity".
+        </p>
+      </div>
+    </div>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img
+          i18n-src
+          class="step-gif"
+          src="assets/gif/scenario_learn_more_q1.gif"
+        />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 3: </span>
+          Browse back to the <span class="bold">climate</span> scenarios. Each scenario contains a small description and a link for additional information.
+          Press the <span class="bold">Learn More...</span> hyperlink. A popup box will be displayed. This box shows the defined values for the model parameters
+          when selecting this scenario. Click on the <span class="bold">Affected Model Inputs</span> dropdown and select <span class="bold">SanMarIn</span>.
+          The name, description and data plot of this input will be displayed.
+          The units of the data values can be changed on the <span class="bold">convert units</span> dropdown menu.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/input_catalog_q1.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 4 (optional): </span>
+          To further customize a scenario, the model's individual input parameters can be accesed through the <span class="bold">Input Catalog</span> (located on the top-right of the page).
+          This catalog contains a listing of editable and non-editable input parameters. As an example,  access the <span class="bold">Inflows at San Marcial Gauges</span> and press over the table row.
+          A detailed view of the input will be displayed. The parameter values can be directly modified on the data table, and visualized as a line plot or bar plot.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/run_scenario.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 5: </span>
+          Go back to the select scenarios screen. Press the green <span class="bold">Run Model</span> button. A dialog box will be displayed with a <span class="bold">Model Run Form</span>.
+          First, input a name for your custom scenario. Second, select your water-related role (i.e., what role identifies you when creating this scenario).
+          Third, click on the <span class="bold">Scenario Description</span> text box.
+          This text box will automatically include the information about the predefined scenario(s) used. Additional text can be included.
+          Finally, you are required to agree with the website policies to run your model. You can learn more about these policies by clicking on the provided links.
+          Once the form is complete, the <span class="bold">Submit</span> button will be enabled.
+        </p>
+      </div>
+    </div>
+
+    <p i18n>The results of executing your scenario will be available after a few seconds. The page automatically shows the <span class="bold">View Results</span>
+      step once results are available. In contrast to the canned scenarios, the complete list of the model outputs is available to review.
+    </p>
+
+    <div class="responsive-img">
+      <p i18n class="middle bold">
+        Congratulations! Your are ready to SWIM on your own! <br />
+        To improve your swimming skills check out the
+        <a [routerLink]="['/help']">Tutorials</a> page for detailed training
+        videos.
+      </p>
+    </div>
+  </section>
+</div>

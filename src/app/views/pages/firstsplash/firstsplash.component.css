@@ -1,0 +1,148 @@
+.wb-intro-header-background{
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../assets/img/caballo_lake.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: hsla(225,75%,16%,0.40);
+  background-blend-mode: overlay;
+  width: 100%;
+}
+
+.wb-intro-header-section{
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+.header-icon{
+  width: auto;
+  font-size: 90px;
+  color: whitesmoke;
+  margin: 0 0 20px 0;
+  filter: drop-shadow(2px 2px #000);
+}
+
+.header-button{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 15px 5px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 10px 0 10px;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title-center{
+  text-align: center;
+}
+
+.container{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+p {
+  line-height: 20px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  /* 1.5em provides good vertical spacing ( = 150% of the font-size) */
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+.wb-contacts p{
+  padding-left: 3px;
+}
+
+.intro-end{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.responsive-img{
+  width: 100%;
+  height: auto;
+}
+
+.highlight{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .step-container {
+    flex-direction: column;
+  }
+}
+
+.flex-left {
+  margin-right: 30px;
+  min-width: 65%;
+
+}
+
+.flex-right {
+  min-width: 35%;
+}
+
+.step-gif {
+  width: 100%;
+  height: auto;
+  border: 1px solid darkgray;
+}
+
+.flex-left-2 {
+  width: 35%;
+  margin-right: 30px;
+}
+
+.flex-right-2 {
+  width: 65%;
+}
+
+.next-splash {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row-reverse;
+}
+
+.next-splash button {
+  margin-left: 15px;
+}
+
+.middle {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,46 @@
+<mat-card class="summary-box" *ngIf="!isLoading">
+  <mat-card-header>
+    <mat-card-title>{{ specification.info[lanIndex].caption }}</mat-card-title>
+    <mat-card-subtitle style="text-align: justify;">
+      {{ specification.info[lanIndex].subcaption }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <div class="legends">
+      <small *ngIf="specification.benchmarks"
+        >{{ this.specification.benchmarks[lanIndex].acronym }} =
+        {{ this.specification.benchmarks[lanIndex].label }}</small
+      >
+    </div>
+
+    <!-- Gauge Template -->
+    <rg-gauge-chart
+      *ngIf="specification.widget.type === 'fill-percent-gauge' && plotVisible === true"
+      [canvasWidth]="canvasWidth"
+      [nameFont]="nameFont"
+      [centralLabel]="centralLabel"
+      [needleValue]="specification.widget.needleValue"
+      [bottomLabelFont]="bottomLabelFont"
+      [bottomLabel]="bottomLabel"
+      [options]="options"
+    ></rg-gauge-chart>
+
+    <!-- Chart JS Template -->
+    <canvas
+      class="plot-box"
+      baseChart
+      *ngIf="
+        (specification.widget.type === 'single-bar-plot' ||
+          specification.widget.type === 'horizontal-bars') &&
+        plotVisible === true
+      "
+      [datasets]="plotData"
+      [labels]="plotLabels"
+      [options]="plotOptions"
+      [colors]="plotColors"
+      [legend]="plotShowLegend"
+      [chartType]="plotType"
+    >
+    </canvas>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,438 @@
+<div *ngIf="selectedParamater.definitionType === 'user'" width="100%">
+  <blockquote i18n="@@hintInputDetail" class="hintbox design">
+    "The input values for this parameter can be customized according to your
+    preference. Drag slider(s) or double click table cells to modify the values,
+    which ever is available on the default visualization type..."
+  </blockquote>
+</div>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{ selectedParamater.paraminfo[lanIndex].paramLabel }}
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <!-- Input Metadata-->
+    <div class="metadata">
+      <h3 i18n="@@descriptionTitle">Description</h3>
+      <p>{{ selectedParamater.paraminfo[lanIndex].paramDescription }}</p>
+      <h3 i18n="@@metaTitle">Metadata</h3>
+      <p>
+        <span i18n="@@labelParamName" class="bold-me">Parameter Name: </span
+        >{{ selectedParamater.paramName }}
+      </p>
+      <p>
+        <span i18n="@@labelUnits" class="bold-me">Units: </span
+        >{{ selectedParamater.paraminfo[lanIndex].paramUnit }}
+      </p>
+      <p *ngIf="selectedParamater.paramDefaultSource !== ''">
+        <span i18n="@@labelSource" class="bold-me">Default Source: </span
+        >{{ selectedParamater.paramDefaultSource }}
+      </p>
+    </div>
+
+    <h3 i18n="@@visualizationsTitle">Data Visualization</h3>
+    <div class="visualization-types">
+      <button
+        i18n="@@defaultButton"
+        matTooltip="Show input values with default visualization type"
+        i18n-matTooltip
+        [ngClass]="{ 'visualization-selected-2': mode === defaultMode }"
+        mat-raised-button
+        color="primary"
+        (click)="onVizChange(defaultMode)"
+      >
+        Default
+      </button>
+      <button
+        i18n="@@tableButton"
+        matTooltip="Show input data in table form"
+        i18n-matTooltip
+        *ngIf="selectedParamater.structType !== 'scalar'"
+        style="margin-left: 5px"
+        [ngClass]="{ 'visualization-selected-2': mode === 'table' }"
+        mat-raised-button
+        color="primary"
+        (click)="onVizChange('table')"
+      >
+        Table
+      </button>
+      <button
+        i18n="@@lineButton"
+        matTooltip="Show input data as a line plot"
+        i18n-matTooltip
+        *ngIf="
+          selectedParamater.structType !== 'scalar' &&
+          lineChartData[0].data.length > 1
+        "
+        style="margin-left: 5px"
+        [ngClass]="{ 'visualization-selected-2': mode === 'line' }"
+        mat-raised-button
+        color="primary"
+        (click)="onVizChange('line')"
+      >
+        Line Plot
+      </button>
+      <button
+        i18n="@@barButton"
+        matTooltip="Show input data as bar chart"
+        i18n-matTooltip
+        *ngIf="selectedParamater.structType !== 'scalar'"
+        style="margin-left: 5px"
+        [ngClass]="{
+          'visualization-selected-2':
+            mode === 'bar' && selectedParamater.structType !== 'scalar'
+        }"
+        mat-raised-button
+        color="primary"
+        (click)="onVizChange('bar')"
+      >
+        Bar Plot
+      </button>
+    </div>
+
+    <!-- Non-Editable Field-->
+    <div
+      style="margin-top: 20px"
+      class="flex-item"
+      *ngIf="mode === 'field' && widgetReady === true"
+    >
+      <mat-form-field>
+        <input
+          readonly="true"
+          matInput
+          placeholder="Value"
+          value="{{ selectedParamater.paramValue }}"
+        />
+      </mat-form-field>
+      <br />
+    </div>
+
+    <!-- Single Slider Widget -->
+    <div
+      style="margin: 20px; width: 40%"
+      class="flex-item"
+      *ngIf="mode === 'slider' && widgetReady === true"
+    >
+      <span
+        *ngIf="
+          selectedParamater.paraminfo[lanIndex].paramUnit === 'percent' ||
+          selectedParamater.paraminfo[lanIndex].paramUnit === 'porcentaje'
+        "
+        class="text-small"
+        >{{ selectedParamater.minValue | percent : "0.0-4" }}</span
+      >
+      <span
+        *ngIf="
+          selectedParamater.paraminfo[lanIndex].paramUnit !== 'percent' &&
+          selectedParamater.paraminfo[lanIndex].paramUnit !== 'porcentaje'
+        "
+        class="text-small"
+        >{{ selectedParamater.minValue }}</span
+      >
+      <mat-slider
+        class="example-margin"
+        [step]="stepSize"
+        [max]="selectedParamater.maxValue"
+        [min]="selectedParamater.minValue"
+        [(ngModel)]="selectedParamater.paramValue"
+        (change)="onCellValueChanged()"
+      >
+      </mat-slider>
+      <span
+        *ngIf="
+          selectedParamater.paraminfo[lanIndex].paramUnit === 'percent' ||
+          selectedParamater.paraminfo[lanIndex].paramUnit === 'porcentaje'
+        "
+        class="text-small"
+        >{{ selectedParamater.maxValue | percent : "0.0-4" }}</span
+      >
+      <span
+        *ngIf="
+          selectedParamater.paraminfo[lanIndex].paramUnit !== 'percent' &&
+          selectedParamater.paraminfo[lanIndex].paramUnit !== 'porcentaje'
+        "
+        class="text-small"
+        >{{ selectedParamater.maxValue }}</span
+      >
+      <div
+        *ngIf="
+          selectedParamater.paraminfo[lanIndex].paramUnit === 'percent' ||
+          selectedParamater.paraminfo[lanIndex].paramUnit === 'porcentaje'
+        "
+      >
+        <label i18n="@@etiquetaValor">Value: </label
+        ><span>{{ selectedParamater.paramValue | percent : "0.0-4" }}</span>
+      </div>
+      <div
+        *ngIf="
+          selectedParamater.paraminfo[lanIndex].paramUnit !== 'percent' &&
+          selectedParamater.paraminfo[lanIndex].paramUnit !== 'porcentaje'
+        "
+      >
+        <mat-form-field>
+          <mat-label i18n>Value</mat-label>
+          <input
+            matInput
+            type="number"
+            [min]="selectedParamater.minValue"
+            [max]="selectedParamater.maxValue"
+            [(ngModel)]="selectedParamater.paramValue"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <!-- Multiple Slider Widget -->
+    <div
+      style="margin: 20px; width: 40%"
+      class="flex-item"
+      *ngIf="mode === 'multiple-slider' && widgetReady === true"
+    >
+      <div *ngFor="let obj of selectedParamater.paramValue">
+        <label class="bold-me">{{ generateLabel(obj) }}</label>
+        <div
+          *ngIf="selectedParamater.paraminfo[lanIndex].paramUnit === 'percent'"
+        >
+          <label i18n="@@etiquetaValor">Value: </label
+          ><span>{{ obj.value | percent : "2.2-4" }}</span>
+        </div>
+        <div
+          *ngIf="selectedParamater.paraminfo[lanIndex].paramUnit !== 'percent'"
+        >
+          <label i18n="@@etiquetaValor">Value: </label
+          ><span>{{ obj.value }}</span>
+        </div>
+        <br />
+        <span
+          *ngIf="
+            selectedParamater.paraminfo[lanIndex].paramUnit === 'percent' ||
+            selectedParamater.paraminfo[lanIndex].paramUnit === 'porcentaje'
+          "
+          class="text-small"
+          >{{ selectedParamater.minValue | percent : "0.0-4" }}</span
+        >
+        <span
+          *ngIf="
+            selectedParamater.paraminfo[lanIndex].paramUnit !== 'percent' &&
+            selectedParamater.paraminfo[lanIndex].paramUnit !== 'porcentaje'
+          "
+          class="text-small"
+          >{{ selectedParamater.minValue }}</span
+        >
+        <mat-slider
+          class="example-margin"
+          [step]="stepSize"
+          [max]="selectedParamater.maxValue"
+          [min]="selectedParamater.minValue"
+          [(ngModel)]="obj.value"
+          (change)="onCellValueChanged()"
+        >
+        </mat-slider>
+        <span
+          *ngIf="
+            selectedParamater.paraminfo[lanIndex].paramUnit === 'percent' ||
+            selectedParamater.paraminfo[lanIndex].paramUnit === 'porcentaje'
+          "
+          class="text-small"
+          >{{ selectedParamater.maxValue | percent : "0.0-4" }}</span
+        >
+        <span
+          *ngIf="
+            selectedParamater.paraminfo[lanIndex].paramUnit !== 'percent' &&
+            selectedParamater.paraminfo[lanIndex].paramUnit !== 'porcentaje'
+          "
+          class="text-small"
+          >{{ selectedParamater.maxValue }}</span
+        >
+      </div>
+    </div>
+
+    <!-- Datatable-->
+    <div class="flex-item" *ngIf="mode === 'table'">
+      <ag-grid-angular
+        #dataGrid
+        style="height: 450px"
+        id="dataGrid"
+        class="ag-theme-balham"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        (gridReady)="onGridReady($event)"
+        (cellValueChanged)="onCellValueChanged()"
+      >
+      </ag-grid-angular>
+    </div>
+
+    <!-- Plots -->
+    <div class="flex-item" *ngIf="mode === 'line' || mode === 'bar'">
+      <div i18n class="plot-hint">
+        Hint: Click on a plot legend to hide/show a dataset!
+      </div>
+      <div style="display: block">
+        <canvas
+          class="plot-box"
+          baseChart
+          *ngIf="lineChartLabels.length > 0"
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+        >
+        </canvas>
+      </div>
+    </div>
+
+    <div class="toolbar-row">
+      <div class="table-toolbar-right">
+        <button
+          i18n="@@resetButton"
+          matTooltip="Reset input to default values"
+          i18n-matTooltip
+          style="margin-left: 5px"
+          mat-stroked-button
+          color="primary"
+          (click)="onResetValues()"
+        >
+          Reset
+        </button>
+
+        <button
+          i18n="@@exportButton"
+          matTooltip="Export table data to Excel viewable file"
+          i18n-matTooltip
+          *ngIf="mode === 'table'"
+          style="margin-left: 5px"
+          mat-stroked-button
+          color="primary"
+          (click)="onBtnExport()"
+        >
+          Export Data
+        </button>
+
+        <button
+          i18n="@@importButton"
+          *ngIf="false !== false"
+          matTooltip="Import values from csv file"
+          i18n-matTooltip
+          style="margin-left: 5px"
+          mat-stroked-button
+          color="primary"
+          (click)="onImportCSV()"
+        >
+          Import Data
+        </button>
+
+        <!--
+        <button
+          matTooltip="Zoom In"
+          i18n-matTooltip
+          *ngIf="mode === 'line' || mode === 'bar'"
+          style="margin-left: 5px"
+          mat-stroked-button
+          color="primary"
+          (click)="onZoomIn()"
+        >
+          Zoom In
+        </button>
+
+        <button
+          matTooltip="Zoom Out"
+          i18n-matTooltip
+          *ngIf="mode === 'line' || mode === 'bar'"
+          style="margin-left: 5px"
+          mat-stroked-button
+          color="primary"
+          (click)="onZoomOut()"
+        >
+          Zoom Out
+        </button>
+        -->
+
+        <button
+          i18n="@@exportPlotButton"
+          *ngIf="mode === 'line' || mode === 'bar'"
+          matTooltip="Shows plot in image form. To save right click and save as a .png file."
+          i18n-matTooltip
+          style="margin-left: 5px"
+          mat-stroked-button
+          color="primary"
+          (click)="onExportPlot()"
+        >
+          Export Plot
+        </button>
+      </div>
+    </div>
+
+    <!-- Data Tool Boxes-->
+    <h3 i18n="@@dataToolsTitle">Data Tools</h3>
+    <!-- unit conversion widget-->
+    <div class="appendable-list" *ngIf="unitOptions != null">
+      <span i18n="@@labelConvert" class="append-label">Convert Units </span
+      ><br />
+      <small i18n>Change measurement units e.g. metric to english system.</small
+      ><br />
+      <mat-form-field>
+        <mat-label i18n="@@labelSelectUnit">select unit</mat-label>
+        <mat-select
+          matTooltip="Select a unit target for dataset values"
+          i18n-matTooltip
+          [(ngModel)]="selectedParamater.paraminfo[lanIndex].paramUnit"
+          (selectionChange)="onSelectUnit()"
+        >
+          <mat-option *ngFor="let unit of unitOptions" [value]="unit">
+            {{ unit }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <!-- simple moving average widget-->
+    <div
+      *ngIf="
+        selectedParamater.structType !== 'scalar' &&
+        lineChartData[0].data.length > 1 &&
+        mode == 'line'
+      "
+      class="appendable-list"
+    >
+      <a
+        target="_blank"
+        i18n-href
+        href="https://en.wikipedia.org/wiki/Moving_average"
+        ><span i18n class="visualization-text"
+          >Show Simple Moving Average (SMA):
+        </span></a
+      ><br />
+      <small i18n
+        >Append a rolling average to a selected dataset over a set of initial
+        consecutive points.</small
+      ><br />
+      <mat-form-field>
+        <mat-label i18n>Dataset</mat-label>
+        <mat-select [(value)]="movingAverages" multiple>
+          <mat-option *ngFor="let dataset of lineChartData" [value]="dataset">{{
+            dataset.label
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <mat-label i18n>Consecutive Points:</mat-label><br />
+      <mat-slider
+        *ngIf="lineChartData.length > 0"
+        class="moving-avg-slider"
+        min="2"
+        [max]="lineChartData[0].data.length"
+        step="1"
+        (change)="setMovingAverages()"
+        [(value)]="movingTimeSteps"
+        tickInterval="1"
+        thumbLabel="true"
+      ></mat-slider>
+    </div>
+  </mat-card-content>
+</mat-card>

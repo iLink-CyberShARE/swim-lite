@@ -1,0 +1,133 @@
+<div id="top"></div>
+
+<header class="wb-intro-header-background">
+  <div class="wb-intro-header-section">
+    <div class="home-header-headline">
+      <h1 i18n>Getting Started with SWIM</h1>
+      <fa-icon class="header-icon" [icon]="faSwimmingPool"></fa-icon><br />
+      <h2 i18n>Take a first splash</h2>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <section class="quick-tutorial">
+    <h3 i18n>First learn about SWIM policies and terms of use.</h3>
+    <p i18n>
+      SWIM uses cookies to manage user credentials and track the selection of
+      modeling outputs. This information is used to measure the platforms’ usage
+      and customize the user experience. Allowing the use of cookies will enable
+      access to the data and modeling features available in SWIM.
+    </p>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/cookies.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          Accept the cookie agreement by placing your cursor over the popup
+          notice located at the left-hand corner of the website and press the
+          <span class="bold">Allow</span> button. Cookie tracking can be disabled at any time by reopening the agreement box and selecting <span class="bold">Deny</span>.
+
+          The <span class="bold">Learn more</span> link will direct you to the SWIM policies.
+        </p>
+      </div>
+    </div>
+    <p i18n>
+      You can register in SWIM on the <span class="bold">Login</span> dropdown (top-right) to stay
+      up to date on new features and privately save your own scenarios, we
+      will skip this step for now.
+    </p>
+
+    <h3 i18n>Swimming into a Canned Scenario</h3>
+    <p i18n>
+      Explore predefined questions of interest, created with input from stakeholders, and
+      see how SWIM can help you answer them. A canned scenario makes a choice
+      of which model to use, what scenario to use, and chooses of what
+      outputs to display based on the relevance to the question. These include
+      river storage and flow, groundwater levels, urban prices, consumption,
+      and climate impacts on crops. You can further customize a scenario,  if needed.
+    </p>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/canned_menu.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 1: </span> Access the Canned Scenarios by placing your cursor over the <span class="bold">Scenarios</span>
+          dropdown on the main navigation bar and select <span class="bold">Canned Scenarios</span>.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/canned_scroll.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 2: </span>
+          Start exploring: “Climate effects down the line in a conjunctive
+          water use setting surface and groundwater” by scrolling down to the
+          bottom of the page and clicking on the
+          <span class="bold">View Scenario</span> button.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/output_results.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 3: </span>
+          Place your cursor over the <span class="bold">View Results</span> step, located on the top right
+          of the page. Switch between the summary page and the output catalog by
+          clicking on the dashboard (squares) and book icons to explore the scenario
+          results.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-container">
+      <div class="flex-left">
+        <img i18n-src class="step-gif" src="assets/gif/output_details.gif" />
+      </div>
+      <div class="flex-right">
+        <p i18n>
+          <span class="bold">Step 4: </span>
+          View output details by adding a checkmark in the box next to the individual variable name and clicking on the <span class="bold">View Selected</span>
+        </p>
+        <p i18n>
+          For this canned scenario, select the total cumulative loss on the Hueco Bolson and
+          Mesilla Bolson. Note that the climate only directly affects the surface.
+          It can be observed that the loss is much steeper than the recharge on both aquifers.
+          SWIM provides a visual representation of the outcomes of the scenario without
+          requiring additional software. In addition, you can interchange the units used
+          for the visualizations and compare output variables side-by-side.
+        </p>
+      </div>
+    </div>
+
+    <div class="responsive-img">
+      <p i18n class="middle">
+        For more information on browsing model results, consult the <span class="bold">Water
+          Balance Model – Output Catalog</span> video on the <a [routerLink]="['/help']" >Tutorials</a> page.
+      </p>
+    </div>
+
+    <div class="next-splash">
+      <div>
+        <button [routerLink]="['/second-splash']" matTooltip="Next: Take a dive" mat-fab color="primary" aria-label="Next">
+          <mat-icon>navigate_next</mat-icon>
+        </button>
+      </div>
+      <div>
+        <p i18n class="bold">Take a dive customizing your own model scenario</p>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,14 @@
+.dialog-form {
+  min-width: 200px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.mat-dialog-actions {
+  display: block;
+}

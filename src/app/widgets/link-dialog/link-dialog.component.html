@@ -1,0 +1,28 @@
+<div class="done-container" *ngIf="copied === true">
+  <mat-icon>done_outline</mat-icon><br>
+  <small i18n="@@linkCopied">Link Copied</small>
+</div>
+<div class="dialog-form">
+  <div  mat-dialog-content
+  fxLayout
+  fxLayout.md="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="10px">
+    <mat-form-field fxFlex="70%">
+      <input  matInput [ngModel]="link" #userinput >
+    </mat-form-field>
+    <button
+      fxFlex="30%"
+      class="copy-btn"
+      (click)="onCopyLink(userinput)"
+      i18n="@@copy"
+      mat-raised-button color="primary">
+      Copy
+    </button>
+  </div>
+  <small class="legend" i18n="@@accessHint"><fa-icon class="model-icon" [icon]="faUniversalAccess"></fa-icon> Anyone with link can view scenario results
+  on workflow view.</small>
+  <div class="down-buttons" mat-dialog-actions>
+    <button i18n="@@closeLabel" mat-button (click)="onNoClick()">Close</button>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="login-box">
+  <img src="assets/img/logo-hs.png" />
+  <div class="isa_error" *ngIf="isError">
+      {{errorMessage}}
+  </div>
+  <div class="isa_success" *ngIf="isSignedIn">
+    Signed in successfully! You will be redirected shortly to your private scenarios...
+  </div>
+  <h3 class="page-title">Sign In</h3>
+  <div (click)="$event.stopPropagation()">
+    <div class="form-in">
+      <form
+        #authForm="ngForm"
+        (ngSubmit)="onSubmit(authForm)"
+        class="example-form"
+      >
+        <input id="hsuser" ngModel name="hsuser" type="text" required />
+        <div class="below-input">
+          <label>Username or email address</label>
+        </div>
+
+        <br />
+        <input type="password" id="password" ngModel name="password" required />
+        <div class="below-input">
+          <label>Password</label>
+        </div>
+        <input [(ngModel)]="isAgreementChecked" type="checkbox" id="hs-agreement" name="hs-agreement" />
+        <label
+          >I agree with the
+          <a href="#">SWIM-HS Web Privacy Policy</a></label
+        >
+        <br />
+        <button [disabled]="!isAgreementChecked" class="btn btn-default" type="submit">
+          <span>Sign In</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="hs-footer">
+    <p>
+      If you don't have an account you can
+      <a target="_blank" href="https://www.hydroshare.org/sign-up/"
+        >join HydroShare</a
+      >
+      now.
+    </p>
+    <p>
+      You can also
+      <a
+        target="_blank"
+        href="https://www.hydroshare.org/accounts/password/reset/?next=/accounts/update/"
+        >reset your password</a
+      >
+      if you've forgotten it.
+    </p>
+  </div>
+</div>

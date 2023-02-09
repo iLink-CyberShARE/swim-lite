@@ -1,0 +1,37 @@
+.main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-dropdown{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login-button{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-container{
+  width: 250px;
+  text-align: center;
+}
+
+.forgot-container{
+  text-align: right;
+}
+
+.forgot-container a{
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+

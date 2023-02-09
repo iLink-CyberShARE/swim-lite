@@ -1,0 +1,74 @@
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.header-icon{
+  width: auto;
+  font-size: 90px;
+  color: whitesmoke;
+  margin: 0 0 20px 0;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+button a:hover, a:active{
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+a:hover, a:active{
+  color: lightgray;
+}
+
+.navigation-items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media(max-width: 959px){
+  mat-toolbar{
+      border-radius: 0px;
+  }
+}
+
+.beta{
+  text-decoration: wavy;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.flags{
+  display: inline;
+  padding-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.flags a {
+  margin-left: 4px;
+}
+
+.flags a img{
+  width: 20px;
+}
+
+.left-space {
+  margin-left: 0.5em;
+}

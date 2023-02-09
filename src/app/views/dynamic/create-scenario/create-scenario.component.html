@@ -1,0 +1,247 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+  <p i18n>Loading...</p>
+  <p>{{ this.loadingLabel }}</p>
+</div>
+
+<div class="main-container" *ngIf="!isLoading">
+  <div width="90%" class="parent categories">
+    <div class="child-left model-name">
+      <h3>
+        {{ this.model.info[lanIndex].name }}
+      </h3>
+    </div>
+    <div class="child-center"></div>
+    <div class="child-right">
+      <button
+        mat-icon-button
+        aria-label="Time Range"
+        matTooltip="Change projection time period"
+        class="button-center-cats"
+        (click)="onTimeRange()"
+        i18n-matTooltip
+      >
+        <a><mat-icon>access_time</mat-icon><span i18n> Time Range</span></a>
+      </button>
+      <button
+        mat-icon-button
+        aria-label="Map"
+        matTooltip="Open interactive area map"
+        i18n-matTooltip
+        class="button-center-cats3"
+      >
+        <a
+          target="_blank"
+          href="https://water.cybershare.utep.edu/map/riogrande"
+          ><mat-icon>map</mat-icon><span i18n> Area Map</span></a
+        >
+      </button>
+      <button
+        mat-icon-button
+        aria-label="Input Catalog"
+        (click)="onInputCatalog()"
+        matTooltip="View list of input parameters"
+        i18n-matTooltip
+        class="button-center-cats2"
+      >
+        <mat-icon>book</mat-icon><span i18n> Input Catalog</span>
+      </button>
+    </div>
+  </div>
+
+  <mat-horizontal-stepper
+    [linear]="isLinear"
+    #stepper
+    (selectionChange)="onStepChange($event)"
+    *ngIf="!showInputCatalog"
+  >
+    <mat-step [completed]="true" matTooltip="select scenarios by category">
+      <ng-template matStepLabel
+        ><span
+          matTooltip="select a model scenario per category"
+          i18n
+          i18n-matTooltip
+          >Select Scenarios</span
+        ></ng-template
+      >
+      <div width="100%">
+        <blockquote i18n class="hintbox design">
+          "Select scenarios by clicking on their representative image or title.
+          To review and customize specific model parameters, access the input
+          catalog located at the top-right of the page."
+        </blockquote>
+      </div>
+      <div width="100%" class="parent categories">
+        <div class="child-left"></div>
+        <div class="child-center" *ngIf="inputScenarioCategories.length > 1">
+          <span i18n class="title-categories">Scenario Categories</span>
+          <br />
+          <button
+            [ngClass]="{
+              'selected-category': category === selectedScenarioCat
+            }"
+            class="button-center-cats"
+            *ngFor="let category of inputScenarioCategories"
+            (click)="onScenarioCategoryPicked(category)"
+            mat-raised-button
+            color="primary"
+          >
+            {{ category }}
+          </button>
+        </div>
+        <div class="child-right">
+          <br />
+          <button
+            [disabled]="isCannedScenario"
+            matTooltip="Describe your scenario and submit for execution"
+            i18n-matTooltip
+            class="button-center-cats run-btn"
+            mat-raised-button
+            matStepperNext
+          >
+            <mat-icon>play_arrow</mat-icon><span i18n> Run Model</span>
+          </button>
+        </div>
+      </div>
+      <div class="theme-container" *ngIf="themesCustomizeList.length > 0">
+        <!-- component call will go on the for loop-->
+        <app-scenario-theme
+          class="theme-child"
+          *ngFor="let theme of themesCustomizeList"
+          [themeChoice]="theme"
+          [langIndex]="this.themeCatalogService.lanIndex"
+        ></app-scenario-theme>
+      </div>
+    </mat-step>
+
+    <mat-step [completed]="executionDone">
+      <ng-template matStepLabel
+        ><span
+          i18n
+          matTooltip="Describe your scenario and submit for execution"
+          i18n-matTooltip
+          >Run Model</span
+        ></ng-template
+      >
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel
+        ><span
+          matTooltip="View result summary and model output catalog"
+          i18n-matTooltip
+          i18n
+          >View Results</span
+        ></ng-template
+      >
+      <div class="output-container" *ngIf="executionDone">
+        <div class="toolbar parent2">
+          <div class="sub-menu">
+            <mat-button-toggle-group
+              #group="matButtonToggleGroup"
+              value="summary"
+            >
+              <mat-button-toggle
+                value="summary"
+                aria-label="Scenario Summary"
+                matTooltip="Summary"
+                i18n-matTooltip
+              >
+                <mat-icon>dashboard</mat-icon>
+              </mat-button-toggle>
+              <mat-button-toggle
+                value="catalog"
+                aria-label="Output Catalog"
+                matTooltip="Output Catalog"
+                i18n-matTooltip
+              >
+                <mat-icon>menu_book</mat-icon>
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+
+          <div class="scenario-name">
+            <h3><span i18n>Scenario: </span> {{ userScenario.name }}</h3>
+          </div>
+        </div>
+
+        <div
+          class="output-summary"
+          *ngIf="group.value === 'summary' && executionDone"
+        >
+          <!-- Scenario Metadata Box -->
+          <app-metadata-box
+            class="summary-child"
+            [identifier]="userScenario.id"
+            [name]="userScenario.name"
+            [description]="userScenario.description"
+            [status]="userScenario.status"
+            [start]="userScenario.startedAtTime"
+            [end]="userScenario.endedAtTime"
+            [pstart]="userScenario.start"
+          >
+          </app-metadata-box>
+
+          <!-- List of Output Overviews -->
+          <div
+            class="theme-container"
+            *ngIf="this.summaryCatalog.length > 0 && executionDone"
+          >
+            <app-summary-box
+              class="summary-child"
+              *ngFor="let summary of this.summaryCatalog"
+              [specification]="summary"
+            ></app-summary-box>
+          </div>
+        </div>
+
+        <div
+          class="output-catalog"
+          *ngIf="group.value === 'catalog' && executionDone"
+        >
+          <div *ngIf="showNavigation">
+            <div width="100%">
+              <blockquote i18n class="hintbox design">
+                "To show output results, checkmark the desired variables under
+                the 'Select' column and press the 'View Selected' button."
+              </blockquote>
+            </div>
+            <div width="100%" class="parent categories"></div>
+          </div>
+
+          <!-- individual components will be loaded here-->
+          <app-output-catalog
+            [outputCatalog]="outputCatalog"
+            (inDetails)="onDetails($event)"
+          ></app-output-catalog>
+        </div>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+  <div class="input-catalog" *ngIf="showInputCatalog">
+    <div *ngIf="showNavigationInput">
+      <button
+        style="margin-left: 10px"
+        class="child-left button-center-cats"
+        (click)="onInputCatalogExit()"
+        matTooltip="Go to modeling work-flow steps"
+        mat-raised-button
+        color="primary"
+      >
+        <mat-icon>chevron_left</mat-icon><span i18n>Back</span>
+      </button>
+      <div width="100%">
+        <blockquote i18n class="hintbox design">
+          "Click on a table row to view or customize parameter values (some
+          parameters may not be user changeable). Use the back button to return
+          to the main modeling work-flow."
+        </blockquote>
+      </div>
+    </div>
+    <app-input-catalog
+      [parameterCatalog]="parameterCatalog"
+      (inDetails)="onInputDetails($event)"
+    ></app-input-catalog>
+  </div>
+</div>

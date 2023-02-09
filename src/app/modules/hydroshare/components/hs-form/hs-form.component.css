@@ -1,0 +1,105 @@
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.spinner-container{
+  padding: 70px;
+  text-align: center;
+}
+
+.form-card {
+  max-width: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  margin-top: 2.5em;
+}
+
+mat-card-content{
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-card-actions {
+  text-align: left;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+mat-card-footer {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+input{
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+}
+
+.icon-options{
+  text-align: right;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+
+.beta{
+  font-style: italic;
+  color: blueviolet;
+}
+
+.icon-options mat-icon {
+  margin-left: 20px;
+  font-size: xx-large;
+  color: rgb(46, 44, 44);
+  cursor: pointer;
+}
+
+.fieldButton {
+  margin-right: 8px;
+}
+
+/** https://isabelcastillo.com/error-info-messages-css */
+.isa_info, .isa_success, .isa_warning, .isa_error {
+  margin: 10px 0px;
+  padding:12px;
+  }
+
+.isa_error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border-radius: 3px;
+}
+
+.isa_success {
+  color: darkgreen;
+  background-color: lightgreen;
+  border-radius: 3px;
+}
+
+.isa_info {
+  color: darkgreen;
+  background-color: lightblue;
+  border-radius: 3px;
+}
+

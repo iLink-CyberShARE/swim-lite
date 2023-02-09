@@ -1,0 +1,24 @@
+<div class="rating-container">
+  <h2 i18n="@@ratingQuestionLabel">
+    How relevant are the following outputs to you?
+  </h2>
+  <mat-dialog-content>
+    <div *ngFor="let output of selectedOutputs">
+      <app-star-rating
+        #rateWidget
+        [targetOutputLabel]="output.varinfo[0].varLabel"
+        [targetOutputName]="output.varName"
+        (rateEvent)="onRated(rateWidget.ratingOutput)"
+      ></app-star-rating>
+    </div>
+    <button
+      i18n
+      mat-flat-button
+      [mat-dialog-close]="ratingList"
+      [disabled]="!allrated"
+      color="accent"
+    >
+      Submit
+    </button>
+  </mat-dialog-content>
+</div>

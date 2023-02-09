@@ -1,0 +1,39 @@
+.summary-box{
+  margin: 25px 10px 25px 10px;
+  min-width: 450px;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 90%;
+}
+
+mat-card-content {
+  width: 100%;
+  text-align: center;
+  flex-grow: 1;
+}
+
+mat-card-subtitle{
+  font-size: 16px;
+}
+
+.legends{
+  margin-left: 20px;
+  text-align: left;
+}
+
+.plot-box{
+  min-height: 390px;
+}
+
+rg-gauge-chart{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+

@@ -1,0 +1,134 @@
+version: '3.8'
+name: swim-lite
+services:
+
+  swim-ui:
+    # swim web user interface (frontend)
+    # http://localhost:8081
+    container_name: swim-ui
+    image: lagarnicachavira/swim-ui-public:latest
+    restart: unless-stopped
+    depends_on:
+    - swim-api
+    - swim-wb-py
+    - swim-relational
+    - swim-nosql
+    ports:
+      # <host port> : <application port>
+      - 8081:8081
+    volumes:
+      - ./nginx-configuration:/etc/nginx/conf.d
+
+  swim-api:
+    # service with swim-api and user account creation
+    # http://localhost:9110/api-docs
+    container_name: swim-api
+    image: lagarnicachavira/swim-api-public:latest
+    restart: unless-stopped
+    depends_on:
+      swim-relational:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      APPURL: http://localhost:9110
+      SERVERDESCRIPTION: Stage Node 1
+      APPVERSION: 2.6.1
+      LHOST: host.docker.internal
+      LPORT: 3309
+      LNAME: swim-logs
+      LUSER: root
+      LPASSWORD: changepassword
+      LDIALECT: mysql
+      UHOST: host.docker.internal
+      UPORT: 3309
+      UNAME: swim-users
+      UUSER: root
+      UPASSWORD: changepassword
+      UDIALECT: mysql
+      SHOST: host.docker.internal
+      SPORT: 27018
+      SNAME: modeling
+      SUSER: changeuser
+      SPASSWORD: changepassword
+      SAUTH: admin
+      # swim admin user account
+      AUSER: admin@email.com
+      APASSWORD: adminpassword
+      # guest user account
+      GUSER: guest@email.com
+      GPASSWORD: guestpassword
+    ports:
+      # <Local exposed port> : < application port running inside container>
+      - '9110:3000'
+
+  swim-wb-py:
+    # coupled python processor service and coupled water balance v2 model
+    # http://localhost:5030/swim-wb-py/docs/ (open api docs for wbv2)
+    container_name: swim-wb-py
+    image: lagarnicachavira/swim-wb-py-public:latest
+    restart: unless-stopped
+    depends_on:
+      swim-relational:
+        condition: service_healthy
+    environment:
+      # app environment
+      BOILERPLATE_ENV: 'prod'
+      # database connection string to the swim-users database (mysql)
+      USER_DATABASE_URL: 'mysql://root:changepassword@host.docker.internal:3309/swim-users'
+      # database connection string to the modeling database (mongodb)
+      MODEL_DATABASE_URL: 'mongodb://changeuser:changepassword@host.docker.internal:27018/modeling?authSource=admin'
+      # secret key (use same key as swim-relational)
+      SECRET_KEY: 'changetoken'
+    ports:
+      # <host port> : <application port>
+      - '5030:5001'
+
+  swim-relational:
+    # service with minimal relational database setup for swim using mysql engine
+    container_name: swim-relational
+    image: mysql:8.0.23
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    cap_add:
+      # remove mbind operation not permitted
+      - SYS_NICE
+    environment:
+      # Password for mysql root access, change to your custom password.
+      # IMPORTANT: manually create your own mysql users and appropiate priviledge levels if using this for production!
+      MYSQL_ROOT_PASSWORD: 'changepassword'
+      # Default secret key to be used for JWT encryption, will be saved on the hush table of the swim-recommender database instance
+      TOKEN_SECRET_KEY: 'changetoken' # change to your application secret key, used as hash for encryption in swim
+    ports:
+      # <host port> : < MySQL port running inside container>
+      - '3309:3306'
+    volumes:
+      # copy and run sql scripts to create database instances and schemas
+      # <script path> : <path that executes .sql and .sh scripts on container creation>
+      - ./scripts/mysql:/docker-entrypoint-initdb.d
+      # volume that stores relational data and engine configuration
+      - ./r_databases:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", 'mysqladmin', 'ping', '-h', 'localhost', '-u', 'root', '-p$$MYSQL_ROOT_PASSWORD' ]
+      timeout: 20s
+      retries: 10
+
+  swim-nosql:
+    # service with swim modeling database with one integrated model (water balance v2)
+    image : mongo:5.0.14
+    restart: unless-stopped
+    container_name: swim-nosql
+    environment:
+    - MONGO_INITDB_ROOT_USERNAME=changeuser
+    - MONGO_INITDB_ROOT_PASSWORD=changepassword
+    volumes:
+    - ./ns_data:/downloads/dump
+    - ./scripts/mongo:/docker-entrypoint-initdb.d
+    - ./ns_databases:/data/db
+    ports:
+    # <host port> : <application port>
+    - 27018:27017
+
+
+
+
+

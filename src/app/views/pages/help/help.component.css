@@ -1,0 +1,15 @@
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.video-container {
+  text-align: center;
+}
+

@@ -1,0 +1,56 @@
+<header class="canned-scenarios-header">
+  <div class="canned-scenarios-section">
+    <div class="home-header-headline">
+      <h1 i18n="@@cannedTitle">Canned Scenarios</h1>
+      <fa-icon class="header-icon" [icon]="faArchive"></fa-icon><br />
+    </div>
+  </div>
+</header>
+
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+  <p i18n="@@loading">Loading...</p>
+</div>
+
+<div *ngIf="!isLoading" class="container">
+  <div class="theme-container" *ngIf="cannedScenariosList.length > 0">
+    <div class="theme-child" *ngFor="let scenario of cannedScenariosList">
+      <mat-card class="scenario-theme">
+        <div class="del-box" *ngIf="getCont()">
+          <button
+            mat-icon-button
+            aria-label="Delete Scenario"
+            matTooltip="Delete Scenario"
+            i18n-matTooltip
+            class="del-btn"
+            (click)="onDeleteCan(scenario._id)"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+        <mat-card-header>
+          <mat-card-title class="theme-title">{{
+            scenario.name
+          }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ scenario.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            i18n="@@viewScenarioBtn"
+            style="margin-bottom: 10px;"
+            matTooltip="click to show canned scenario results"
+            i18n-matTooltip
+            mat-raised-button
+            color="primary"
+            class="view-btn"
+            [routerLink]="['/can-scenario', scenario._id]"
+          >
+            View Scenario
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

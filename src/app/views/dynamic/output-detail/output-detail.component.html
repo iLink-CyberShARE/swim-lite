@@ -1,0 +1,269 @@
+<mat-card class="detail-box">
+  <mat-card-header>
+    <mat-card-title>
+      {{ selectedOutput.varinfo[lanIndex].varLabel }}
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <!-- Output Metadata-->
+    <div class="metadata">
+      <h3 i18n="@@descriptionTitle">Description</h3>
+      <p>
+        {{ selectedOutput.varinfo[lanIndex].varDescription }}
+      </p>
+      <h3 i18n="@@metaTitle">Metadata</h3>
+      <p>
+        <span i18n="@@labelIdentifier" class="bold-me">Variable Name: </span
+        >{{ selectedOutput.varName }}
+      </p>
+      <p>
+        <span i18n="@@labelCategory" class="bold-me">Category: </span
+        >{{ selectedOutput.varinfo[lanIndex].varCategory }}
+      </p>
+      <p>
+        <span i18n="@@labelUnits" class="bold-me">Units: </span
+        >{{ selectedOutput.varinfo[lanIndex].varUnit }}
+      </p>
+    </div>
+
+    <div *ngIf="narrative!==''" class="narrative">
+      <h3>Narrative</h3>
+      <p>
+        {{ narrative }}
+      </p>
+    </div>
+
+
+    <!-- Visualization Tool Bar -->
+    <h3 i18n="@@visualizationsTitle">Data Visualization</h3>
+    <div class="visualization-types">
+      <button
+        i18n="@@lineButton"
+        style="margin-right: 5px"
+        matTooltip="Show output data as a line plot"
+        i18n-matTooltip
+        [ngClass]="{ 'visualization-selected-2': mode === 'line' }"
+        mat-raised-button
+        color="primary"
+        (click)="onVizChange('line')"
+      >
+        Line Plot
+      </button>
+      <button
+        i18n="@@barButton"
+        style="margin-right: 5px"
+        matTooltip="Show output data as bar chart"
+        i18n-matTooltip
+        [ngClass]="{ 'visualization-selected-2': mode === 'bar' }"
+        mat-raised-button
+        color="primary"
+        (click)="onVizChange('bar')"
+      >
+        Bar Plot
+      </button>
+      <button
+        i18n="@@tableButton"
+        matTooltip="Show output data in table form"
+        i18n-matTooltip
+        mat-raised-button
+        color="primary"
+        [ngClass]="{ 'visualization-selected-2': mode === 'table' }"
+        (click)="onVizChange('table')"
+      >
+        Table
+      </button>
+    </div>
+
+    <!-- Datatable Visualization -->
+    <div class="flex-item" *ngIf="mode === 'table'">
+      <ag-grid-angular
+        #dataGrid
+        style="height: 450px"
+        id="dataGrid"
+        class="ag-theme-balham"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        (gridReady)="onGridReady($event)"
+      >
+      </ag-grid-angular>
+    </div>
+
+    <!-- Plot Visualization -->
+    <div class="flex-item" *ngIf="mode === 'line' || mode === 'bar'">
+      <div i18n class="plot-hint">
+        Hint: Click on a plot legend to hide/show a dataset!
+      </div>
+      <div style="display: block">
+        <canvas
+          class="plot-box"
+          baseChart
+          *ngIf="lineChartLabels.length > 0"
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+        >
+        </canvas>
+      </div>
+    </div>
+
+    <!-- Visualization Options -->
+    <div class="toolbar-row">
+      <div class="table-toolbar-right">
+        <button
+          i18n="@@resetButton"
+          matTooltip="Reset to initial data state"
+          i18n-matTooltip
+          style="margin-left: 5px; margin-top: 3px"
+          mat-stroked-button
+          color="primary"
+          (click)="onResetValues()"
+        >
+          Reset
+        </button>
+        <button
+          i18n="@@reversePlotButton"
+          matTooltip="Flip Y axis values"
+          i18n-matTooltip
+          *ngIf="mode === 'line' || mode === 'bar'"
+          style="margin-left: 3px; margin-top: 3px"
+          mat-stroked-button
+          color="primary"
+          (click)="onPlotReverse()"
+        >
+          Reverse Plot
+        </button>
+        <button
+          *ngIf="mode === 'table'"
+          i18n="@@exportDataButton"
+          matTooltip="Export table columns to spreadsheet file"
+          i18n-matTooltip
+          style="margin-left: 3px; margin-top: 3px"
+          mat-stroked-button
+          color="primary"
+          (click)="onBtnExport()"
+        >
+          Export
+        </button>
+      </div>
+    </div>
+
+    <!-- Data Tool Boxes-->
+    <h3 i18n="@@dataToolsTitle">Data Tools</h3>
+    <div class="detail-top" *ngIf="!hideTools">
+      <div class="appendable-choices">
+
+        <!-- Unit converstion widget -->
+        <div class="appendable-list" *ngIf="unitOptions !== null">
+          <span i18n="@@labelConvert" class="append-label"
+            >Convert Units
+          </span><br>
+          <small>Change measurement units e.g. metric to english system.</small><br>
+          <mat-form-field>
+            <mat-label i18n="@@labelSelectUnit">select unit</mat-label>
+            <mat-select
+              matTooltip="Select a unit target for dataset values"
+              i18n-matTooltip
+              [(ngModel)]="selectedOutput.varinfo[lanIndex].varUnit"
+              (selectionChange)="onSelectUnit()"
+            >
+              <mat-option *ngFor="let unit of unitOptions" [value]="unit">{{
+                unit
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <!-- Appendable Input List -->
+        <div class="appendable-list" *ngIf="appendableInputSets.length > 0">
+          <span i18n="@@labelInputDS" class="append-label"
+            >Show Input Dataset:
+          </span><br>
+          <small>Append one or more model input datasets to current visualization.</small>
+          <mat-form-field>
+            <mat-label i18n="@@labelSelectInputs">select inputs</mat-label>
+            <mat-select
+              matTooltip="Select input datasets to show on visualization"
+              i18n-matTooltip
+              multiple
+              [(value)]="appendedInputSets"
+              (selectionChange)="onSetSelected()"
+            >
+              <mat-option
+                *ngFor="let set of appendableInputSets"
+                [value]="set"
+                >{{ set.paraminfo[lanIndex].paramLabel }}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <!-- Appendable Output List -->
+        <div class="appendable-list" *ngIf="appendableOutputSets.length > 0">
+          <span i18n="@@labelOutputDS" class="append-label"
+            >Show Output Dataset:
+          </span><br>
+          <small>Append one or more model output datasets to current visualization.</small>
+          <mat-form-field>
+            <mat-label i18n="@@labelSelectOutputs">select outputs</mat-label>
+            <mat-select
+              matTooltip="Select output datasets to show on visualization"
+              i18n-matTooltip
+              multiple
+              [(value)]="appendedOutputSets"
+              (selectionChange)="onSetSelected()"
+            >
+              <mat-option
+                *ngFor="let set of appendableOutputSets"
+                [value]="set"
+                >{{ set.varinfo[lanIndex].varLabel }}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <div
+      *ngIf="lineChartData[0].data.length > 1 && mode == 'line' && !hideTools"
+    >
+      <div class="appendable-list">
+        <a
+          target="_blank"
+          i18n-href
+          href="https://en.wikipedia.org/wiki/Moving_average"
+          ><span i18n class="visualization-text"
+            >Show Simple Moving Average (SMA):
+          </span></a><br>
+          <small>Append a rolling average to a selected dataset over a set of initial consecutive points.</small>
+        <mat-form-field>
+          <mat-label i18n>Dataset</mat-label>
+          <mat-select [(value)]="movingAverages" multiple>
+            <mat-option
+              *ngFor="let dataset of lineChartData"
+              [value]="dataset"
+              >{{ dataset.label }}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+        <br />
+        <mat-label i18n="@@smaConsecutive">Consecutive Points:</mat-label><br />
+        <mat-slider
+          *ngIf="lineChartData.length > 0"
+          class="moving-avg-slider"
+          min="2"
+          [max]="lineChartData[0].data.length"
+          step="1"
+          (change)="setMovingAverages()"
+          [(value)]="movingTimeSteps"
+          tickInterval="1"
+          thumbLabel="true"
+        ></mat-slider>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

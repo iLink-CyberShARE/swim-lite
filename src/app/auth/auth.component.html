@@ -1,0 +1,60 @@
+<div class="login-dropdown" (click)="$event.stopPropagation()">
+  <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" class="example-form">
+    <mat-form-field>
+      <input i18n="@@regEmail"
+        matInput
+        placeholder="E-mail"
+        i18n-placeholder
+        type="email"
+        id="email"
+        ngModel
+        name="email"
+        required
+        email
+      />
+      <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input i18n="@@regPassword"
+        matInput
+        placeholder="Password"
+        i18n-placeholder
+        [type]="hide ? 'password' : 'text'"
+        id="password"
+        ngModel
+        name="password"
+        required
+      />
+      <button i18n="@@regHide"
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <br>
+    <div class="btn-container">
+      <button
+        class="login-button"
+        mat-raised-button
+        color="accent"
+        type="submit"
+      >
+        <span i18n="@@loginButton">Login</span>
+      </button>
+      <br>
+      <button
+        class="login-button"
+        mat-raised-button
+        color="primary"
+        (click)="onRegisterClicked()"
+      >
+        <span i18n="@@registerButton">Register</span>
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,77 @@
+# SWIM-Lite
+
+## Framework
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11
+
+# Developer Notes
+
+##  Development Requirements
+* NodeJS v12 or higher: https://nodejs.org/en/
+* Angular v11 or higher  CLI: https://cli.angular.io/
+
+## Development Installation
+* Clone repository (not published)
+* go the angular project root folder
+* run npm install to get all dependencies
+
+## How to run it locally in english
+* run ng serve for testing environment on port 4200 (frontend)
+
+## Environments
+* environment endpoints for the frontend are in src/app/environments
+
+## custom npm Commands
+
+*  npm run extract-i18n => extract annotated html for internationalization
+*  npm run start-es or npm run start-en => run locally english or spanish
+*  npm run build:client-bundles-i18n => build clients in all languages for production
+*  ng serve --configuration=es => local server (en or es for language)
+*  ng generate component <component_name> --module app => new module creation
+
+## Docker commands
+docker build -t lagarnicachavira/swim-lite:latest .
+docker run -p 4200:4200 lagarnicachavira/swim-lite
+
+https://davejansen.com/how-to-dump-restore-a-mongodb-database-from-a-docker-container/
+
+Mongo Database Backup:
+$ docker exec some-mongo sh -c 'exec mongodump -d <database_name> --archive' > /some/path/on/your/host/all-collections.archive
+
+$docker exec swim-nosql sh -c 'exec mongodump --username changeuser --password changepassword --authenticationDatabase admin --db modeling --gzip --archive' ./ns_data/dump_modeling.gz //nop
+
+$docker exec swim-nosql sh -c 'exec mongodump --username changeuser --password changepassword --authenticationDatabase admin --db modeling' > ./ns_data/
+
+docker exec swim-nosql sh -c 'exec mongodump --username changeuser --password changepassword --authenticationDatabase admin --db modeling'
+
+ /usr/bin/mongorestore --username $username --password $password --authenticationDatabase admin --db modeling /downloads/dump/
+
+https://stackoverflow.com/questions/60046739/mongorestore-in-docker-failed-failed-gzip-invalid-header
+
+Mongo Database Restore:
+
+mongorestore --db database_name path_to_bson_file
+
+mongorestore --username changeuser --password changepassword --db modeling dump_modeling.gz
+
+Mysql
+
+https://referbruv.com/blog/setting-up-and-using-mysql-as-a-container-via-docker-compose/
+
+## Documentation Commands
+* Generation command: >> npx compodoc -p tsconfig.json --disableSourceCode --disableGraph --disableTemplateTab --disableStyleTab --disableCoverage --theme material  -s
+* Local Serve: >> npx run compodoc -s
+
+## Image Path Syntax
+
+* For html loaded images use assets...
+* For css loaded images use ~/assets...
+* For database loaded use assets...
+
+
+
+
+
+
+
+

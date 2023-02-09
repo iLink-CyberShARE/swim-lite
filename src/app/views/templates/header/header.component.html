@@ -1,0 +1,192 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-md>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div class="flags">
+    <a matTooltip="English" [href]="base_url_en"
+      ><img src="assets/img/us.png"
+    /></a>
+    <a matTooltip="Español" [href]="base_url_es"
+      ><img src="assets/img/mx.png"
+    /></a>
+  </div>
+
+  <div i18n="@@menuAcro">SWIM 2.6</div>
+
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.md fxHide.sm fxHide.xs>
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        <a
+          [routerLink]="['/home']"
+          routerLinkActive="router-link-active"
+          mat-button
+        >
+          <fa-icon [icon]="faHome"></fa-icon
+          ><span class="left-space" i18n>Home</span>
+        </a>
+      </li>
+      <li>
+        <mat-menu #modelMenu="matMenu">
+          <button
+            [routerLink]="['/wb2-intro']"
+            routerLinkActive="router-link-active"
+            mat-menu-item
+          >
+            <fa-icon [icon]="faBalanceScale"></fa-icon
+            ><span i18n class="left-space">Water Balance Model 2.0</span>
+          </button>
+        </mat-menu>
+      </li>
+      <li>
+        <a mat-button [matMenuTriggerFor]="modelMenu">
+          <fa-icon [icon]="faChartArea"></fa-icon
+          ><span i18n class="left-space">Models</span>&nbsp;<b
+            class="caret"
+          ></b>
+        </a>
+      </li>
+      <li>
+        <mat-menu #scenarioMenu="matMenu">
+          <button
+            mat-menu-item
+            [routerLink]="['/canned-scenarios']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faArchive"></fa-icon
+            ><span i18n class="left-space">Canned Scenarios</span>
+          </button>
+          <button
+            mat-menu-item
+            [routerLink]="['/public']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faUsers"></fa-icon
+            ><span i18n class="left-space">Public Scenarios</span>
+          </button>
+        </mat-menu>
+      </li>
+      <li>
+        <a mat-button [matMenuTriggerFor]="scenarioMenu"
+          ><fa-icon [icon]="faImage"></fa-icon
+          ><span i18n class="left-space"
+            >Scenarios &nbsp;<b class="caret"></b></span
+        ></a>
+      </li>
+
+      <li>
+        <mat-menu #dataMenu="matMenu">
+          <button mat-menu-item>
+            <a
+              target="_blank"
+              [href]="api_docs"
+            >
+              <fa-icon [icon]="faServer"></fa-icon
+              ><span i18n class="left-space">API DOC</span>
+            </a>
+          </button>
+        </mat-menu>
+      </li>
+
+      <li>
+        <a mat-button [matMenuTriggerFor]="dataMenu"
+          ><fa-icon [icon]="faDatabase"></fa-icon
+          ><span i18n class="left-space">Data&nbsp;<b class="caret"></b> </span
+        ></a>
+      </li>
+
+      <li>
+        <mat-menu #helpMenu="matMenu">
+          <button
+            mat-menu-item
+            [routerLink]="['/first-splash']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faSwimmingPool"></fa-icon
+            ><span i18n class="left-space">First splash</span>
+          </button>
+          <button
+            mat-menu-item
+            [routerLink]="['/second-splash']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faSwimmer"></fa-icon
+            ><span i18n class="left-space">Dive in</span>
+          </button>
+          <button
+            mat-menu-item
+            [routerLink]="['/help']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faLifeRing"></fa-icon
+            ><span i18n class="left-space">Tutorials</span>
+          </button>
+          <button mat-menu-item>
+            <a
+              target="_blank"
+              href="https://water.cybershare.utep.edu/resources/docs/en2/"
+              ><fa-icon [icon]="faBook"></fa-icon
+              ><span i18n="@@menuDocs" class="left-space"
+                >Documentation</span
+              ></a
+            >
+          </button>
+        </mat-menu>
+      </li>
+      <li>
+        <a mat-button [matMenuTriggerFor]="helpMenu"
+          ><fa-icon [icon]="faQuestion"></fa-icon
+          ><span i18n class="left-space">Help&nbsp;<b class="caret"></b> </span
+        ></a>
+      </li>
+      <li>
+        <mat-menu #loginMenu="matMenu">
+          <app-auth></app-auth>
+        </mat-menu>
+      </li>
+      <li>
+        <a mat-button *ngIf="!isAuthenticated" [matMenuTriggerFor]="loginMenu">
+          <fa-icon [icon]="faUser"></fa-icon> &nbsp;<span i18n="@@menuLogin"
+            >Login&nbsp;</span
+          >
+          <b class="caret"></b
+        ></a>
+      </li>
+      <li>
+        <a mat-button *ngIf="isAuthenticated" [matMenuTriggerFor]="accountMenu"
+          ><fa-icon [icon]="faUser"></fa-icon> &nbsp;<span i18n="@@accountMenus"
+            >Account &nbsp;<b class="caret"></b></span
+        ></a>
+      </li>
+      <li>
+        <mat-menu #accountMenu="matMenu">
+          <button
+            *ngIf="isAuthenticated"
+            mat-menu-item
+            [routerLink]="['/private']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faImage"></fa-icon
+            ><span class="left-space" i18n="@@menuPrivateScenarios"
+              >My Scenarios</span
+            >
+          </button>
+          <button
+            mat-menu-item
+            [routerLink]="['/changepass']"
+            routerLinkActive="router-link-active"
+          >
+            <fa-icon [icon]="faKey"></fa-icon
+            ><span class="left-space" i18n="@@menuChange">Change Password</span>
+          </button>
+          <button mat-menu-item (click)="onLogout()">
+            <fa-icon [icon]="faSignOutAlt"></fa-icon
+            ><span class="left-space" i18n="@@menuLogout">Logout</span>
+          </button>
+        </mat-menu>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>

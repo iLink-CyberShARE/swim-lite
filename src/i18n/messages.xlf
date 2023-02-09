@@ -1,0 +1,3178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-us" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="f85dc01e7aab1a5c282d14b74650255ae4042fe0" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/auth.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/auth.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="regHide" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon>"/><x id="INTERPOLATION" equiv-text="{{ hide ? &quot;visibility_off&quot; : &quot;visibility&quot; }}"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/auth.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginButton" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/auth.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerButton" datatype="html">
+        <source>Register</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/auth.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changeTitle" datatype="html">
+        <source>Change Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/change-password/change-password.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reqFields" datatype="html">
+        <source>* required fields</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/change-password/change-password.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ae3dcf96b494406b6fd6fbd2f15f7259553bf4d" datatype="html">
+        <source>Current Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/change-password/change-password.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e8dea53c9b8ad570f7a35cb5834594a9af155c15" datatype="html">
+        <source>New Password (min 8 chars)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/change-password/change-password.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="556c38a009359325a7b632ad8b0a1759594074d7" datatype="html">
+        <source>Confirm New Password (min 8 chars)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/change-password/change-password.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changeButton" datatype="html">
+        <source> Submit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/change-password/change-password.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="regTitle" datatype="html">
+        <source>User Registration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
+        <source>First name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="166b2cc65003221ff5f3ec05d5baca41e6821396" datatype="html">
+        <source>Last Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="127cf6036430f85be2916862056bb94c55263953" datatype="html">
+        <source>E-mail Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c764faa8b8c5cad27fad79f0091b3239bf52517e" datatype="html">
+        <source>Institution</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a6405c2af5225e2f302b76fa98ed13f3eba2b1c" datatype="html">
+        <source>Department</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2654fcf0a8ab2545724ef66f1a89a024a051a3ec" datatype="html">
+        <source>Water Related Role</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1b7e6d75ff4285c7636c67e5ef259629b81725b" datatype="html">
+        <source>Confirm Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="81bd2ca4bb573dba2b988f1dd926bc75e49c18fe" datatype="html">
+        <source>I agree with the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://swim.cybershare.utep.edu/en/policy&quot; target=&quot;_blank&quot;>"/>SWIM Web Privacy Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0ed4d0362fb2744ea92422508c065f13bfde36d0" datatype="html">
+        <source> Register </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.component.html</context>
+          <context context-type="linenumber">181,182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="94516fa213706c67ce5a5b5765681d7fb032033a" datatype="html">
+        <source>Loading...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3e6937fdbde4da7f8c6866d56182945437e2629e" datatype="html">
+        <source>Go Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1aa39699bedadec1d02959c7277d604526b25e6c" datatype="html">
+        <source>HydroShare Resource Form </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4636f71c624fb41df56f88bfd7666abdcc121b6" datatype="html">
+        <source>SWIM Scenario: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7f0deb43994e4913b5540a98095b6bc11bed166b" datatype="html">
+        <source>HS Resource updated successfully:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fdf7cbdc140d0aab0f0b6c06065a0fd448ed6a2e" datatype="html">
+        <source>Title</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="940be92695446bc65b1a1da41362347bd5a3e13b" datatype="html">
+        <source>Resource URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a15e0231f8585af4515291b8ce367eb13749e391" datatype="html">
+        <source>Resource Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d72f9b8c8af35fd6a630a114dce7cb2929e5be5c" datatype="html">
+        <source>Abstract</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9126be74673d1463ae9a28882c84969aadcfbb2c" datatype="html">
+        <source>Subject Keywords</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c7d761ff7a5f7e7a8f6d3899d4a7fe62e73afab3" datatype="html">
+        <source>cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="79205f76b374a738487ccebb66b2b4612e61b7bb" datatype="html">
+        <source>Contributors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="459bce4d4d918315003d1a512579a4da401d0b6f" datatype="html">
+        <source>Contributor No.<x id="INTERPOLATION" equiv-text="{{ i + 1 }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f3a58c8a81b9ffda26a154eae25a422c9f7de37b" datatype="html">
+        <source>Organization</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="729754dd19eb9ce0670b0aeb5a6ae60574c2c563" datatype="html">
+        <source>Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6934d8edd276d59e050006fe91b695ebad0218f8" datatype="html">
+        <source>Phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="19045a2bca152d17c6184bcd683d5c67aa642426" datatype="html">
+        <source>+ Add Contributor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="36b3b71b10e53a6c937676e9b6f0e292eea9f8f7" datatype="html">
+        <source>- Remove Contributor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bcdb12efbca95e83cb84b73c9c6f1a903bbc99e5" datatype="html">
+        <source>Awards</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f77681394451748c2b90c5ead813ac43f41521ca" datatype="html">
+        <source>Award No.<x id="INTERPOLATION" equiv-text="{{ i + 1 }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25c07ddd9d0d230fedd98be69e92f8b3b2f4c1fa" datatype="html">
+        <source>Funding Agency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1c099eb4497e6a730dc055c7c6504377c712bdcd" datatype="html">
+        <source>Project Title</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3e44ad0999ac92b19f6e67603b240c7e5155417d" datatype="html">
+        <source>Award Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="01ff101f73985fdc85ae2e2e9ab2ffd3694f8a62" datatype="html">
+        <source>Funding Agency URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c9c5570ee66307c61b08b82e6a7c88a6065eac64" datatype="html">
+        <source>+ Add Award</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68934ef9fe5be46e298b703693e89bdd943dee3d" datatype="html">
+        <source>- Remove Award</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">258</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71022ef0f98bdf8879e22bc18b6b1333a3eb112a" datatype="html">
+        <source>Rights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="defad8d06bea905c2a0e77e23e63353f86e0d95f" datatype="html">
+        <source>Statement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="801b98c6f02fe3b32f6afa3ee854c99ed83474e6" datatype="html">
+        <source>URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bd3a0f07da608e66d379828b392d87b66c1d766" datatype="html">
+        <source>+ Add Right</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2421d7225069ed17a700d1f24b5ff619abb4daf9" datatype="html">
+        <source>- Remove Right</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fdc12fa2c952dcf0dc25e1cf5d5005299666793b" datatype="html">
+        <source>Create Resource</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">318</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7078e27feed139bd5559de82c3f7836b04b8c92c" datatype="html">
+        <source>Update Resource</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8252bb00110b66ba1af695aca679a59eed6d4912" datatype="html">
+        <source>Delete Resource</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/hydroshare/components/hs-form/hs-form.component.html</context>
+          <context context-type="linenumber">337</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cannedTitle" datatype="html">
+        <source>Canned Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/canned-scenarios/canned-scenarios.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loading" datatype="html">
+        <source>Loading...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/canned-scenarios/canned-scenarios.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/time-range-dialog/time-range-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c90f96272357cc29535e7615cb329aad97dbf1e9" datatype="html">
+        <source>Delete Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/canned-scenarios/canned-scenarios.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="108d20e8e493b5cea6052d94fa29722d1defd967" datatype="html">
+        <source>click to show canned scenario results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/canned-scenarios/canned-scenarios.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="viewScenarioBtn" datatype="html">
+        <source> View Scenario </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/canned-scenarios/canned-scenarios.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="160d898139f93c1f42d7ab17a6ad9d647677a118" datatype="html">
+        <source>Change projection time period</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6fd70f5aa76ff47df14dbf9a6111659589337e34" datatype="html">
+        <source> Time Range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6738040317125d5df8cfd6b3e54054df9298c77" datatype="html">
+        <source>Open interactive area map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d874a8ed5b07ba5a2da12374eabed5b7975c2a4" datatype="html">
+        <source> Area Map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cbc8b35cf7bdf13ccf0eddbfbbdcc46d5e06c4fa" datatype="html">
+        <source>View list of input parameters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1971bac0bed4493fdbd7e50c9a4af0cd6ad3eba0" datatype="html">
+        <source> Input Catalog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c53b756bb320557c63323594887ff357b165c219" datatype="html">
+        <source>select a model scenario per category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a6a28e5e5cdc97621990580e86264490b01764c9" datatype="html">
+        <source>Select Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8c561886b03c08c3c94276da3da6f6df43a54206" datatype="html">
+        <source> "Select scenarios by clicking on their representative image or title. To review and customize specific model parameters, access the input catalog located at the top-right of the page." </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">69,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="735fdaad87b749917c9e90b8e2272800aea75294" datatype="html">
+        <source>Scenario Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30add7aa7374bdd4156b9008d4c3384fe25ac10e" datatype="html">
+        <source>Describe your scenario and submit for execution</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="236b028a816da7ff301316b8715d98d7fdb284af" datatype="html">
+        <source> Run Model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb09abfdbc6f853bd0364e33d4126b04a77d05a5" datatype="html">
+        <source>Run Model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a49ba6bb3647017432b59ede74651d128487c4af" datatype="html">
+        <source>View result summary and model output catalog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="277bb57e0ca4b5a0254ce3ba720639ca3aebf170" datatype="html">
+        <source>View Results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a8233de047500bf0f0d9f9f1712ddb071501a283" datatype="html">
+        <source>Summary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d9116ace3ce2bc12da7c8d3b738958d1418784d0" datatype="html">
+        <source>Output Catalog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ce5d7019fc1d0fcc13b36fd08b9b5c6ac52a3d9" datatype="html">
+        <source>Scenario: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f009af3d132ed4380d8f2bce2380809fbf8fddc7" datatype="html">
+        <source> "To show output results, checkmark the desired variables under the 'Select' column and press the 'View Selected' button." </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">205,207</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cda31dbd724cf5f4fa7a4274d9120651490c8a8c" datatype="html">
+        <source>Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea37b5b62de96513d5d2d4c1ba56c1dadcfecc61" datatype="html">
+        <source> "Click on a table row to view or customize parameter values (some parameters may not be user changeable). Use the back button to return to the main modeling work-flow." </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/create-scenario/create-scenario.component.html</context>
+          <context context-type="linenumber">236,239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c08ed740326d94daa4aba6aea2a7ff0d3ee1850a" datatype="html">
+        <source>Run Scenario: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6958032b1d84ea9e866082d3cd418c70208ca25c" datatype="html">
+        <source>Run Description: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="descriptionTitle" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="metaTitle" datatype="html">
+        <source>Metadata</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelIdentifier" datatype="html">
+        <source>Variable Name: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelCategory" datatype="html">
+        <source>Category: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelUnits" datatype="html">
+        <source>Units: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="visualizationsTitle" datatype="html">
+        <source>Data Visualization</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="38b0d8af3cdc7c4a299eedab940b0f87840bca1d" datatype="html">
+        <source>Show output data as a line plot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lineButton" datatype="html">
+        <source> Line Plot </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="851724822596cfef868465629edc0319237cfcd0" datatype="html">
+        <source>Show output data as bar chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="barButton" datatype="html">
+        <source> Bar Plot </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3c4c5c32fc2ac61b2466bc22508ce35ebfd8bedb" datatype="html">
+        <source>Show output data in table form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableButton" datatype="html">
+        <source> Table </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="229720530207af2d9e2edff8af2bc2cfec8deec9" datatype="html">
+        <source> Hint: Click on a plot legend to hide/show datasets </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06aaca27c5492c704cf748c5d7362ffd94288442" datatype="html">
+        <source>Reset data plot to initial view</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetButton" datatype="html">
+        <source> Reset </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">301,302</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">126,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8f2822ec099e20efebe9bb65806dbd854826eef" datatype="html">
+        <source>Flip Y axis values</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reversePlotButton" datatype="html">
+        <source> Reverse Plot </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">136,137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e7de814b055b83a929384a4deca12e731aca8b8" datatype="html">
+        <source>Export table datasets to Excel viewable file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exportDataButton" datatype="html">
+        <source> Export </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">147,148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">150,151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dataToolsTitle" datatype="html">
+        <source>Data Tools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="unitConv" datatype="html">
+        <source>Unit Conversion </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selectUnits" datatype="html">
+        <source>Select Units:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b63533b0df1f4e01b13aff6280564bd7025ae54" datatype="html">
+        <source>Select a unit target for dataset values</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">382</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="040a6162725f35b01a952e17efc3cabc3117bdd1" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Moving_average</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">406</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a6906239be1056ec4635d1676dd50aec4dbbeb60" datatype="html">
+        <source>Simple Moving Average (SMA) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">184,185</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c77177c5bdbf7ea0904c0c09be779514a135ea8d" datatype="html">
+        <source>Select Dataset:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b7338a0fadaaa6db505af94195dd4abbb4acdc82" datatype="html">
+        <source>Select Consecutive Points:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/cross-compare/cross-compare.component.html</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputCats" datatype="html">
+        <source>Input Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e57145cdc6b3749670510497ca75cc3e39dcb280" datatype="html">
+        <source>Show all model inputs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="all" datatype="html">
+        <source> All </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83f180654a7fbc676751b7f409c1d421d757cbf1" datatype="html">
+        <source>Filter inputs by category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchPlaceholder" datatype="html">
+        <source>Search Input Parameter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e892ba15f2c6c17e83510e273b3e10fc32ea016" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="de96c5f7fbdb6776a960fcaa3d829c95aa2228b6" datatype="html">
+        <source>show inputs where values can be modified by users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editableButton" datatype="html">
+        <source> Editable </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ca659977bbda1e892c96864a2f04e1e0b398ee67" datatype="html">
+        <source>show non-editable inputs that are loaded to the model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noEditableButton" datatype="html">
+        <source> Non-Editable </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="23b20627c9af8383b8ec26160fd74228985bc7ff" datatype="html">
+        <source>show non-editable inputs that are constant in the model or portray observed real data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="codedButton" datatype="html">
+        <source> Coded/Observed </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6ee76bccf2b8e74402acc3bda3a2307809689eb8" datatype="html">
+        <source>Export input catalog to Excel file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exportCatButton" datatype="html">
+        <source> Export </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">123,124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a238a25802e4270436ede7573185e338880f2fb0" datatype="html">
+        <source>Click row for details and editing options on selected parameter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="46706850248acecdc52bee69fa5c59cb3af6ec20" datatype="html">
+        <source>Click to sort alphabetically by parameter label</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="columnParameter" datatype="html">
+        <source> Parameter </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2438c1928309c26fd2f1447f13d77f243013316b" datatype="html">
+        <source>Click to sort alphabetically by category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="columnCat" datatype="html">
+        <source> Category </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">132,133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="columnDesc" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="39b8822d9b66f6dc58ba9ce75d7fa3ae384744b7" datatype="html">
+        <source>Maximum value that can be assigned to the parameter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="columnUpperBound" datatype="html">
+        <source> Upper Bound </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">152,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b89a6491d030bddcc6e2957bf2aae29855df2eb9" datatype="html">
+        <source>Minium value that can be assigned to the parameter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="columnLowerBound" datatype="html">
+        <source> Lower Bound </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">166,167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="columnUnits" datatype="html">
+        <source>Units</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-catalog/input-catalog.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hintInputDetail" datatype="html">
+        <source> "The input values for this parameter can be customized according to your preference. Drag slider(s) or double click table cells to modify the values, which ever is available on the default visualization type..." </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelParamName" datatype="html">
+        <source>Parameter Name: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelSource" datatype="html">
+        <source>Default Source: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0927e7fbaba45789c7c0733ccf5ede74e0e77350" datatype="html">
+        <source>Show input values with default visualization type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="defaultButton" datatype="html">
+        <source> Default </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9337f2867e80d46d568410e2eec371b28bae8ab3" datatype="html">
+        <source>Show input data in table form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d91ad02bf5805f6a033e0d5db5b8475214a6c3c9" datatype="html">
+        <source>Show input data as a line plot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f708306edeefe04644d618a916189dc36a0a8ce9" datatype="html">
+        <source>Show input data as bar chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="etiquetaValor" datatype="html">
+        <source>Value: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5049e204c14c648691ac775a64fb504467aeb549" datatype="html">
+        <source>Value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1de4d8730b3df1fd924aa0ad707cdf0cf4e2a76a" datatype="html">
+        <source> Hint: Click on a plot legend to hide/show a dataset! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">271,272</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11cdace2442746a0a02163fbaacfd9a1815a63f8" datatype="html">
+        <source>Reset input to default values</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">294</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="47e29785dffe3c09ac6b2603ff99fd940c9d73e6" datatype="html">
+        <source>Export table data to Excel viewable file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">306</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exportButton" datatype="html">
+        <source> Export Data </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">314,315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="75f2480bff127ac9adc322bfbfa5778f875e6185" datatype="html">
+        <source>Import values from csv file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="importButton" datatype="html">
+        <source> Import Data </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">327,328</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c332c98a970cf9596829e85d4342ae4cfb58aa78" datatype="html">
+        <source>Shows plot in image form. To save right click and save as a .png file.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">359</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="exportPlotButton" datatype="html">
+        <source> Export Plot </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">366,367</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelConvert" datatype="html">
+        <source>Convert Units </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">375</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">163,164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0c0d072f4372e6cd9ec81c83ddab414447f81be4" datatype="html">
+        <source>Change measurement units e.g. metric to english system.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">377</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelSelectUnit" datatype="html">
+        <source>select unit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">380</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d3c6fdf0c07aaaa4b391db9188c5c5f2835207d5" datatype="html">
+        <source>Show Simple Moving Average (SMA): </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">408,409</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4bef96ee17a82b3fac59236125e3e7209f05b030" datatype="html">
+        <source>Append a rolling average to a selected dataset over a set of initial consecutive points.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">412,413</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="39bb5418f542d58ff2b35c656ebb07c396761000" datatype="html">
+        <source>Dataset</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">416</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="184655283c3537d8188f0a63c9e0af61d461fbf6" datatype="html">
+        <source>Consecutive Points:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/input-detail/input-detail.component.html</context>
+          <context context-type="linenumber">424</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="outputCatTitle" datatype="html">
+        <source>Output Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="49f70d6cd2c192ddfe966f60ee67d3786ba84d5d" datatype="html">
+        <source>View all output variables</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02ba3b45a72c5e2e919b00b20021fe1af1544394" datatype="html">
+        <source>Filter outputs by category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchOutput" datatype="html">
+        <source>Search Output</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb65066308ea611c72373d8b0345771e36620a2f" datatype="html">
+        <source>Sort by recommendation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="recommend" datatype="html">
+        <source> Recommend </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b0b0aa3c940df254c4bfbd73de890c468c13973" datatype="html">
+        <source>Show data values of selected outputs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="viewSelectedButton" datatype="html">
+        <source> View Selected </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0b6087dd2a1ea17cb95fe95993910e3d02d45728" datatype="html">
+        <source>Compare selected outputs against results from other scenario runs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="054cd1c10a2e514a46a9b6393444c200da567887" datatype="html">
+        <source> Cross-Compare </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+        <note priority="1" from="description">crossCompareBtn</note>
+      </trans-unit>
+      <trans-unit id="79c4f829f4f11bc6b694934d27b61559efcd53f5" datatype="html">
+        <source>Clean all selected marks in table</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deselectButton" datatype="html">
+        <source> Deselect All </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d4eebfa7581b9e1fbc8b0017dd5ab8d65cd80403" datatype="html">
+        <source>Remove search or category filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetTableButton" datatype="html">
+        <source> Reset Table </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">111,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b9241ba44c1fda5f7ed2b743403f67c01721f7d1" datatype="html">
+        <source>Export output catalog to Excel file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selectColumn" datatype="html">
+        <source>Select</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b2a296b3d96c7a80d18bddcc0970f004544b1dab" datatype="html">
+        <source>Click to sort alphabetically by output label</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="variableColumn" datatype="html">
+        <source> Output Variable </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">158,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="catColumn" datatype="html">
+        <source> Category </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">175,176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="descColumn" datatype="html">
+        <source> Description </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">183,184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="unitColumn" datatype="html">
+        <source>Units</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="backCatButton" datatype="html">
+        <source>Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hintOutputDetails" datatype="html">
+        <source> "You can append additional model datasets to the visualization by selecting from the Show input and Show Output dropdown lists. Only datasets with the same units are available as an option." </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-catalog/output-catalog.component.html</context>
+          <context context-type="linenumber">223,226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4fd52cb52be6567fb441979e488bbda5723df46c" datatype="html">
+        <source>Reset to initial data state</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30d4504eab7e62468da3e3f74d6b9e384a45c619" datatype="html">
+        <source>Export table columns to spreadsheet file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelInputDS" datatype="html">
+        <source>Show Input Dataset: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">184,185</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelSelectInputs" datatype="html">
+        <source>select inputs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45492816f7616c3cfd98621c6fe1b00935634862" datatype="html">
+        <source>Select input datasets to show on visualization</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelOutputDS" datatype="html">
+        <source>Show Output Dataset: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">208,209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelSelectOutputs" datatype="html">
+        <source>select outputs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">212</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9cc95be250895445eaa645ddace929c59313a355" datatype="html">
+        <source>Select output datasets to show on visualization</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9a724c87f8f617c7efc4b114b1dbf0e2ac9ea46c" datatype="html">
+        <source>Show Simple Moving Average (SMA): </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">240,241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="smaConsecutive" datatype="html">
+        <source>Consecutive Points:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/output-detail/output-detail.component.html</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privateTitle" datatype="html">
+        <source>My Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchPlaceholderPublic" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea0090209bc1421ee9ca79f5b44d34334b024a3f" datatype="html">
+        <source>Click to sort alphabetically by name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameCol" datatype="html">
+        <source> Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3c208f6ca7c432b43d6df18fb9a724cc34e510dc" datatype="html">
+        <source>Click to sort by date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="startCol" datatype="html">
+        <source> Execution Start </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="endCol" datatype="html">
+        <source> Execution End </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d4972d43ccd9475608750ceee19c3ea622e0c76" datatype="html">
+        <source>Click to sort by status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statusCol" datatype="html">
+        <source> Status </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="086aa98e2e7cbadc92d077af21cf01b231b3e51e" datatype="html">
+        <source>View custom scenario results in workflow mode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="outputsCol" datatype="html">
+        <source> All Outputs </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7b634a7f94c96572159263437e74ca127f4fb2cd" datatype="html">
+        <source>Click to view results in user workflow</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c661de6508a47f42b6c241c751e03b38dc2aa598" datatype="html">
+        <source>Scenario and model metadata</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="metadataCol" datatype="html">
+        <source> Metadata </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">136,137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">136,137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2429aae99167e85a9c4e47603a278b13107ace15" datatype="html">
+        <source>Click to view scenario metadata</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1a19dc0aed56dad2c5bcbb107be90418ee202e67" datatype="html">
+        <source>Share results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="shareCol" datatype="html">
+        <source> Share </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">159,160</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">159,160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e6229951ca21032e8fec44d07bba2120ca7b2218" datatype="html">
+        <source>Click to generate a link for sharing results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b1f3102c1060804c30b62fc980e72d2a0434b17c" datatype="html">
+        <source>Publish results on Hydroshare</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0e33a2d37f5ecdfaa6bff637243cccdb6a7e57a" datatype="html">
+        <source> HydroShare </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">182,183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a54d31dc489fe720badf559307f9e96c67e950ca" datatype="html">
+        <source>Create a resource on HydroShare for publication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c038899648f998c862427e803c0b4674ee4edb02" datatype="html">
+        <source>Can Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="canCol" datatype="html">
+        <source> Can </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">205,206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="383f961d3da793cf1f7ab4a811dc3672b34763fd" datatype="html">
+        <source>Create a canned scenario from this run</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbddf50c5e6c043a7f4ddde5e5bb58d5ec03e306" datatype="html">
+        <source>Delete scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">224</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deleteCol" datatype="html">
+        <source> Delete </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">228,229</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62b5e533c5c3c221ea9745d20583b5babe202176" datatype="html">
+        <source>Click here to delete scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/private-scenarios/private-scenarios.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="publicTitle" datatype="html">
+        <source>Public Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a1c3fb2ea1ed20da3c7a46176a6f3d3c690a2611" datatype="html">
+        <source>View custom scenario metadata</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbc8d9464f434f2b544b36ec57d987c52e331a42" datatype="html">
+        <source>Click to share results link</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fda0066582f9fded7244a6a6aeb0563e9b08510a" datatype="html">
+        <source>Show link to share results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/public-scenarios/public-scenarios.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="titleRunForm" datatype="html">
+        <source>Model Run Form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="800fa84a463402c8eeec986666ac85f820046cbd" datatype="html">
+        <source>Scenario Name (10 character minimum)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comboRoleLabel" datatype="html">
+        <source>Select Water Related Role</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/role-dialog/role-dialog.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="339a515ddd5528906541be30836ef8c7ee1f547a" datatype="html">
+        <source>Scenario Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="makePublic" datatype="html">
+        <source>Run as Public Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c58ea87d2a1106628088bb67e97a67dd136cf299" datatype="html">
+        <source> I agree with the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://swim.cybershare.utep.edu/en/policy&quot; target=&quot;_blank&quot;
+          >"/>SWIM Web Privacy Policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+        >"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submitButton2" datatype="html">
+        <source> Submit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancelButton" datatype="html">
+        <source> Cancel </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/run-dialog/run-dialog.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">136,137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4ae94521e7be2bf49397d8bbd014488b55eb8780" datatype="html">
+        <source>click image to select scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/scenario-theme/scenario-theme.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b7b3026b36000002d1388aacb8eabca07173aaaf" datatype="html">
+        <source>Derived from:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/scenario-theme/scenario-theme.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4ede4b8e1028f583e4d125e35d5b152acf215908" datatype="html">
+        <source>click to show values for affected model inputs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/scenario-theme/scenario-theme.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="themeLearnButton" datatype="html">
+        <source> Learn more... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/scenario-theme/scenario-theme.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f99f262f5b7efa1794e6d889a6a9c679469297d5" datatype="html">
+        <source>Scenario:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelaffectedInputs" datatype="html">
+        <source>Affected Model Inputs: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="convertUnits" datatype="html">
+        <source>Convert Units: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c7d3f5966781d75bd78bd3e73227459c463a5f4" datatype="html">
+        <source>Units: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e6c3861796ecd9b8d67af1af8781df03121e5225" datatype="html">
+        <source>Description: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2eb12a19ff1767c5323622365be7d500e52e1ca8" datatype="html">
+        <source>CLOSE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/dynamic/theme-detail/theme-detail.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eb26f527bf5de3956e6aa7d82daa8b9d338165dd" datatype="html">
+        <source>Getting Started with SWIM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="659df6f40e500e924bd4a1a78c51f26b6978737a" datatype="html">
+        <source>Take a first splash</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="710191edbb6d0c40e5450d5027700541f7203508" datatype="html">
+        <source>First learn about SWIM policies and terms of use.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b6c872a35c41f697c67a5c41ef3d584fbf618540" datatype="html">
+        <source> SWIM uses cookies to manage user credentials and track the selection of modeling outputs. This information is used to measure the platforms’ usage and customize the user experience. Allowing the use of cookies will enable access to the data and modeling features available in SWIM. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">17,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="245b351be1420c7a25d841bb0ef880ce7b49cc32" datatype="html">
+        <source>assets/gif/cookies.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c2eeda33c1e25b293c8f8a15db6c54904a3c4798" datatype="html">
+        <source> Accept the cookie agreement by placing your cursor over the popup notice located at the left-hand corner of the website and press the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Allow<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> button. Cookie tracking can be disabled at any time by reopening the agreement box and selecting <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Deny<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>. The <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Learn more<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> link will direct you to the SWIM policies. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">29,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e30752d43c673e4aefe53fc170a0ed9728766e85" datatype="html">
+        <source> You can register in SWIM on the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Login<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> dropdown (top-right) to stay up to date on new features and privately save your own scenarios, we will skip this step for now. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76661dc5f57154dac055318f9471aa6cefe7ab4c" datatype="html">
+        <source>Swimming into a Canned Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="801e71bf7ba08b02131b53dd49ed86a6c63aa8e1" datatype="html">
+        <source> Explore predefined questions of interest, created with input from stakeholders, and see how SWIM can help you answer them. A canned scenario makes a choice of which model to use, what scenario to use, and chooses of what outputs to display based on the relevance to the question. These include river storage and flow, groundwater levels, urban prices, consumption, and climate impacts on crops. You can further customize a scenario, if needed. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">45,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f7b9ef5116f9b56bea45f782788e9f4556f13a5" datatype="html">
+        <source>assets/gif/canned_menu.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2fb9b8e093ffe90b95e84a2b91d2fecb6bdaee6" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 1: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Access the Canned Scenarios by placing your cursor over the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Scenarios<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> dropdown on the main navigation bar and select <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Canned Scenarios<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2e6ca22f65bc290eb51079be297b4134ba98645d" datatype="html">
+        <source>assets/gif/canned_scroll.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="27a58bc477a50946270461b1127645ad3c1c8f31" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 2: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Start exploring: “Climate effects down the line in a conjunctive water use setting surface and groundwater” by scrolling down to the bottom of the page and clicking on the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>View Scenario<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> button. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">71,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d05bff3cad17588210c3374587533dbbebf641b8" datatype="html">
+        <source>assets/gif/output_results.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3531c0f02a3694cb2edda8ee78c0892aa84de4f3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 3: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Place your cursor over the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>View Results<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> step, located on the top right of the page. Switch between the summary page and the output catalog by clicking on the dashboard (squares) and book icons to explore the scenario results. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">86,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="272a38d794217356e55213addba7da19c9912f8b" datatype="html">
+        <source>assets/gif/output_details.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1c8cb5fcc9e834867fd87f929b022832b27adf71" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 4: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> View output details by adding a checkmark in the box next to the individual variable name and clicking on the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>View Selected<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f537db6f003d9aea9443bcf1a8104cbf06dadd51" datatype="html">
+        <source> For this canned scenario, select the total cumulative loss on the Hueco Bolson and Mesilla Bolson. Note that the climate only directly affects the surface. It can be observed that the loss is much steeper than the recharge on both aquifers. SWIM provides a visual representation of the outcomes of the scenario without requiring additional software. In addition, you can interchange the units used for the visualizations and compare output variables side-by-side. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">105,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff274c5f26d378078eb87d66649208623f34221e" datatype="html">
+        <source> For more information on browsing model results, consult the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Water Balance Model – Output Catalog<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> video on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/help']&quot; >"/>Tutorials<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> page. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="21d495457f6860a56f9d492a34b97d8bdcfd8cc5" datatype="html">
+        <source>Take a dive customizing your own model scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/firstsplash/firstsplash.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tutorialTitle" datatype="html">
+        <source>Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a52dae09be10ca3a65da918533ced3d3f4992238" datatype="html">
+        <source>Videos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tutorialDesc" datatype="html">
+        <source> Learn how to SWIM with this set of introductory videos! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/>These videos are designed to give you an overview of the platform's various features and quickly get you familiar with them. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">16,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a69314f2a2377bd515343438a93665154009114" datatype="html">
+        <source> SWIM - Project Introduction </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d5c9a60358b53f63163f2b0b80c93ba4c8e96fcb" datatype="html">
+        <source> SWIM - Website Walkthrough </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8fd4bf495868f5111fbe986df8c2a9d2b35dacf6" datatype="html">
+        <source> Area Coverage - SWIM Interactive Map </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e708f12eab542ab29ffb3c4e146561ada3239c6" datatype="html">
+        <source> SWIM - Interface Overview - CUAHSI Webinar Series </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f35409543e4340c07d59e275cd194c680d759e85" datatype="html">
+        <source> Water Balance Model - Scenario Creation </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6df157a5ed1cffa18cfc2e01c85ba0678e53bb12" datatype="html">
+        <source> Water Balance Model - Input Catalog </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a9ca82a019f21c960b123ef361f8aaa774d65cbe" datatype="html">
+        <source> Water Balance Model - Run &amp; Result Dashboard </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="31b6eebee0896be82d350d69712b47a580df45d0" datatype="html">
+        <source> Water Balance Model - Output Catalog </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">136,137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ca9d0b1fad9a647c241d9680d4dccc529882629" datatype="html">
+        <source> Water Balance Model - Cross Scenario Comparison </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">152,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clientReqs" datatype="html">
+        <source>Client Requirements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="clientReqsDesc" datatype="html">
+        <source> The following is a list of recommended requirements for the SWIM interface to run smoothly on your device: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">190,192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="browser-req" datatype="html">
+        <source> SWIM is compatible with most up-to-date web browsers. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">195,196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="firefox-req" datatype="html">
+        <source> SWIM is tested using the latest Firefox Web Browser for Desktop (version >= 105.0.2). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">198,199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="incompatible-req" datatype="html">
+        <source> SWIM is currently incompatible with Firefox for Android. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">201,202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="screen-req" datatype="html">
+        <source> Medium to high resolution screen (e.g tablet size and above). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/help/help.component.html</context>
+          <context context-type="linenumber">204,205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeTitle" datatype="html">
+        <source>Sustainable Water through Integrated Modeling</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5f615f2100c9917b7365fe6ce4d141a387eb09ec" datatype="html">
+        <source> Take a first splash </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutAcro" datatype="html">
+        <source>SWIM: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutTitle" datatype="html">
+        <source>Sustainable Water through Integrated Modeling. Supported by NSF Award# OAC-1835897. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutP1" datatype="html">
+        <source> Scientific models of complex water resource systems help us understand and experiment with the behavior of those systems. Most scientific modeling today requires the use of software that can be hard to understand, expensive to build and maintain, and present little online access. Many of these challenges can be tackled through the use of software that bridges the capabilities of water resource system modeling and the needs of water resource stakeholders. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">27,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutP2" datatype="html">
+        <source> The goal of the SWIM project is to advance water sustainability research capabilities through the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>integration<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>execution<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>interpretation<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> of water models and participatory reasoning processes. Using the meaning of data and models, SWIM facilitates interpretations of water availability in the US Southwest and North of Mexico for stakeholder-driven analysis from the socio-environmental perspective. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">36,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeModels" datatype="html">
+        <source>MODELS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="modelsHidroTitle" datatype="html">
+        <source> Middle Rio Grande Basin Water Balance Model </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="modelsHidroDesc" datatype="html">
+        <source> Accountability model for the Middle Rio Grande Basin that covers water balance from San Marcial twin gauges above Elephant Butte to Fort Quitman. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">62,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeScenarios" datatype="html">
+        <source>SCENARIOS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="scenariosPublicTitle" datatype="html">
+        <source> Public Scenarios </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="scenariosPublicDesc" datatype="html">
+        <source> Check out model scenarios that other users have recently made available for everyone. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="scenariosMyTitle" datatype="html">
+        <source> My Scenarios </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="scenariosMyDesc" datatype="html">
+        <source> Visualize, manage and share your own model scenarios. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/home/home.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="067ad815d9555e88b20dab03a8ae351e2bf09bef" datatype="html">
+        <source>Dive in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="266310ec24364b5f3fd40fb8d937ce97202ab7cc" datatype="html">
+        <source>Customizing your own Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aab5e3da5b7fb79ae8d651c38afddf2188950ee7" datatype="html">
+        <source> The SWIM interface makes available a set of scientific models which you can customize using scenarios to project into the future. SWIM includes predefined scenarios to get you started; each predefined scenario defines the value for one or many input parameters of the model. Models have predefined scenarios grouped in categories, e.g., climate, technology and recovery. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec2334d58b087b39d6714afd936afedc6339099a" datatype="html">
+        <source>assets/gif/model_landings.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a7fc769aeab7053a9b1ef4db41b48b656b60958f" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 1: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> On the main navigation bar, place your pointer over the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Models<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> dropdown menu. A list of scientific models will be displayed. For this tutorial, select the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Water Balance Model<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="81e34a6c7ba2d20a02c8e8941d55bfa5d4d5df63" datatype="html">
+        <source>A landing page with infomation about the model will be displayed. To access the customization workflow, press the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Create Scenario<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> button located in the banner at the top of the page. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b35a26b11e4ab8b46e244a89bfa49d931e916b73" datatype="html">
+        <source>The customization workflow is a three-step process: Scenario Selection, Run Model and View Results.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a7bb423f7e839b8a43d2b078c54c6d6c607167c" datatype="html">
+        <source>assets/gif/scenario_select.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="de056add24717b18e84c4ddee5bce97f6d615a54" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 2: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> On the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Select Scenarios<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> step of the workflow, you can select one predefined scenario from each category. To select a scenario, press the representative image of the scenario. For this tutorial select a scenario combination from each category as follows: Climate - "Extreme Stress", Evaporation - "Default", and Reservoir Operation - "Minimum reservoir storage at 20% of capacity". </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">44,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="40708a5b509b368ea5675f0cb105bc8a4bbcb021" datatype="html">
+        <source>assets/gif/scenario_learn_more_q1.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="480395c28ff09b667527bd07d8b1a1becf9f77a7" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 3: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Browse back to the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>climate<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> scenarios. Each scenario contains a small description and a link for additional information. Press the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Learn More...<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> hyperlink. A popup box will be displayed. This box shows the defined values for the model parameters when selecting this scenario. Click on the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Affected Model Inputs<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> dropdown and select <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>SanMarIn<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>. The name, description and data plot of this input will be displayed. The units of the data values can be changed on the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>convert units<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> dropdown menu. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">62,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="de7757cb74441fa069ac302ed67806b48f97be94" datatype="html">
+        <source>assets/gif/input_catalog_q1.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff62d1e89b404711dda2a9f49ecac5e5aaf0333f" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 4 (optional): <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> To further customize a scenario, the model's individual input parameters can be accesed through the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Input Catalog<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> (located on the top-right of the page). This catalog contains a listing of editable and non-editable input parameters. As an example, access the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Inflows at San Marcial Gauges<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> and press over the table row. A detailed view of the input will be displayed. The parameter values can be directly modified on the data table, and visualized as a line plot or bar plot. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">78,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6da01b06177c9fac7cc65f72c19e0540a37d2509" datatype="html">
+        <source>assets/gif/run_scenario.gif</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e283344579f01ba2ce842c63d1e02bc9591c0ecb" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Step 5: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Go back to the select scenarios screen. Press the green <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Run Model<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> button. A dialog box will be displayed with a <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Model Run Form<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/>. First, input a name for your custom scenario. Second, select your water-related role (i.e., what role identifies you when creating this scenario). Third, click on the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Scenario Description<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> text box. This text box will automatically include the information about the predefined scenario(s) used. Additional text can be included. Finally, you are required to agree with the website policies to run your model. You can learn more about these policies by clicking on the provided links. Once the form is complete, the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>Submit<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> button will be enabled. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">92,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="61c996282875f5e4b362d3fb7f71112bc665906a" datatype="html">
+        <source>The results of executing your scenario will be available after a few seconds. The page automatically shows the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;bold&quot;>"/>View Results<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> step once results are available. In contrast to the canned scenarios, the complete list of the model outputs is available to review. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">103,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a58b76e03111dc81aca2925bf0a3a1277fd1a77e" datatype="html">
+        <source> Congratulations! Your are ready to SWIM on your own! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/> To improve your swimming skills check out the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/help']&quot;>"/>Tutorials<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> page for detailed training videos. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/secondsplash/secondsplash.component.html</context>
+          <context context-type="linenumber">109,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="wbTitle1" datatype="html">
+        <source>Middle Rio Grande Basin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="058c3fafabc09a8ff29126b31a568ce6eeb892d9" datatype="html">
+        <source>Water Balance Model v2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="wbCreateButton" datatype="html">
+        <source> Create Scenario </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="26c98f99b608f3bc6c39ebf97ae5ca2300a74fde" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;>"/>The Water Balance Model<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> has a focus on simplicity, with the goal being to help stakeholders understand how changes in climate could influence regional water availability. The water balance model simulates surface water reservoir storage, reservoir releases and storage in groundwater aquifers in the project study area. The project study area includes portions of New Mexico (NM, US), Texas (TX, US), and Chihuahua (CH, MX). The model simulates storages of water through a simple accounting based on storages at the beginning of a simulation period and inflows and outflows throughout the simulation period. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">26,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7704521c2779b6c181b67203e3c71c46b928b7c2" datatype="html">
+        <source>assets/img/wb-diagram.png</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7b3549ac863130200d945331518b2afa696755ae" datatype="html">
+        <source> The model simulates future time periods, using time series inputs for (a) local precipitation and temperature and (b) San Marcial gauge flows. Demands for surface water releases from Caballo Reservoir are assumed to be the maximum available under the Rio Grande Project 2008 Operating Agreement, which bases releases on water stored in Elephant Butte and Caballo reservoirs and treaty and compact requirements for sharing water between TX (US), NM (US), and CH (MX). Demands from groundwater aquifers are calculated using a base rate of groundwater pumping from each aquifer, based on historical pumping rates, combined with a variable rate, based on historical replacement of surface water shortages with groundwater pumping. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">41,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c6a9adf6cae52f0c66d283b14d574b7760aba046" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Model Engine:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a target=&quot;_blank&quot; href=&quot;&quot;>"/> Python 3.8<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/> The model uses python. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">54,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bmPublicationTitle" datatype="html">
+        <source>Publications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ContactsTitle" datatype="html">
+        <source>Contacts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b88d2db74caad97e6a391f22d50ec382330603ec" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Alex Mayer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/> University of Texas at El Paso <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/> amayer2@utep.edu <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="wbContact2" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Luis Garnica<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/> University of Texas at El Paso <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/> lagarnicachavira@utep.edu <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br />"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fullDocsBtn" datatype="html">
+        <source> See Detailed Documentation </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/pages/wb2-landing/wb-landing.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="policyFooterTitle" datatype="html">
+        <source>POLICIES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/footer/footer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="swimPolicy" datatype="html">
+        <source>SWIM Web Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/footer/footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ack" datatype="html">
+        <source>ACKNOWLEDGEMENTS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/footer/footer.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ackContent" datatype="html">
+        <source> This material is based upon work supported by the National Science Foundation under Grant No. 1835897. This work was supported by The Agriculture and Food Research Initiative (AFRI) grant no. 2015-68007-23130 from the USDA National Institute of Food and Agriculture. This work used resources from Cyber-ShARE Center of Excellence supported by NSF Grant HDR-1242122. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/footer/footer.component.html</context>
+          <context context-type="linenumber">48,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footNote" datatype="html">
+        <source> Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/footer/footer.component.html</context>
+          <context context-type="linenumber">69,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuAcro" datatype="html">
+        <source>SWIM 2.6</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="92eee6be6de0b11c924e3ab27db30257159c0a7c" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3cb74d314342f9cbec337f767e4b62c531244dd8" datatype="html">
+        <source>Water Balance Model 2.0</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="66f618f8ac4973f8beeab64d732acd58b44402e6" datatype="html">
+        <source>Models</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e66d4eb3010450d8c168169a301f925c4007dec7" datatype="html">
+        <source>Canned Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a57f486d8c73ddbfdb9f460bd41730ee409949d0" datatype="html">
+        <source>Public Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea671ec0f0e4e23048eabf7b04da894a77ae87c9" datatype="html">
+        <source>Scenarios  <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="27dcd2006e8fc8d15489f1531f4a68a7d70c6af3" datatype="html">
+        <source>API DOC</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d94879486fa942f4d39d43da8caabacba0b79027" datatype="html">
+        <source>Data <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="92fa5cf118e2f425313753ab75db03deddc541de" datatype="html">
+        <source>First splash</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddfd7e6350ed363f1d4b48f9c73f993042fbaacf" datatype="html">
+        <source>Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuDocs" datatype="html">
+        <source>Documentation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bdee858460a0fb3a910b57ed3409f42ddf37cd66" datatype="html">
+        <source>Help <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuLogin" datatype="html">
+        <source>Login </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accountMenus" datatype="html">
+        <source>Account  <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuPrivateScenarios" datatype="html">
+        <source>My Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuChange" datatype="html">
+        <source>Change Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuLogout" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/header/header.component.html</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuHome" datatype="html">
+        <source> Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b3e6b32e368e1f0a97792ffd83691f0326097d24" datatype="html">
+        <source> Models <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ba6d38be7b20ad4611fca22614f3c61ea0c88944" datatype="html">
+        <source> Scenarios <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b733f7838ec7cecbe805492d7ecff0fcc06b6bda" datatype="html">
+        <source> Data <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d96a96f2af0910ebcd17dd34a3bb394a51f68293" datatype="html">
+        <source> Help <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="40c9669711aab845a4e010378d218d315b6aceb6" datatype="html">
+        <source> Login </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f47208e625c5888dd24d41b330be952ddd660ed8" datatype="html">
+        <source> Account <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;caret&quot;>"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b435b7c82177352a9199b36e9c5f980d9b2c3eb" datatype="html">
+        <source> Water Balance Model 2.0</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="965d77c8a94f6da19429bebc76f9f633b1e1d07b" datatype="html">
+        <source> Canned Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2f299d567f1b1a1f4d3f9fc7b14cde21e427203a" datatype="html">
+        <source> Public Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8c4e9512318246e72c10a44bddd123c3cde3f6fd" datatype="html">
+        <source> SWIM API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8f248a1837e7744bf65b5e2607f5c3689e92ab2" datatype="html">
+        <source> First Splash</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9a38a6bc161bb8ecffc16794269144a20264e594" datatype="html">
+        <source> Dive in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuTutorials" datatype="html">
+        <source> Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="513b084cbcbc73002393ce20dc16a3454a8e8d81" datatype="html">
+        <source> Documentation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/templates/sidenav-list/sidenav-list.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createCanTitle" datatype="html">
+        <source>Create Canned Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="canName" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="canDescription" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30ce9e8bddf5bb5054ce9867e55c8da2cca630f3" datatype="html">
+        <source>Show Outputs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">canShowOutputs</note>
+      </trans-unit>
+      <trans-unit id="canHideTools" datatype="html">
+        <source>Hide Dynamic Tools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createButton" datatype="html">
+        <source> Create </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d49ee389add9351d1a4e56d4c8200eff140b932" datatype="html">
+        <source> Close </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/can-dialog/can-dialog.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hintCompare" datatype="html">
+        <source> Select scenarios to cross compare against chosen model outputs. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchScenario" datatype="html">
+        <source>Search Scenario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="072c33fab3c951ffc1b01d1631fc269e6aeffc79" datatype="html">
+        <source>Show Public Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="showPublic" datatype="html">
+        <source> Public Scenarios </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8532533808d3727a84d3267c7034971c55572b77" datatype="html">
+        <source>Show Private Scenarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="showPrivate" datatype="html">
+        <source> Private Scenarios </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7db89b22f2e28666b90022d92dcd01cc80042b70" datatype="html">
+        <source>Click to sort alphabetically by scenario name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dc7e9ce244026bb6007e82e04f4d1f6e909f28a3" datatype="html">
+        <source> Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">89,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4fc472069c5bc7eb064b7619fd11f69175793ce7" datatype="html">
+        <source>Click to sort by scenario run date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="93cf434823c974d3bd62eb727cefab71e4642932" datatype="html">
+        <source> Run Date </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="compare" datatype="html">
+        <source> Compare </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/compare-dialog/compare-dialog.component.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="linkCopied" datatype="html">
+        <source>Link Copied</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/link-dialog/link-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="copy" datatype="html">
+        <source> Copy </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/link-dialog/link-dialog.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessHint" datatype="html">
+        <source><x id="START_TAG_FA_ICON" ctype="x-fa_icon" equiv-text="&lt;fa-icon class=&quot;model-icon&quot; [icon]=&quot;faUniversalAccess&quot;>"/><x id="CLOSE_TAG_FA_ICON" ctype="x-fa_icon" equiv-text="&lt;/fa-icon>"/> Anyone with link can view scenario results on workflow view.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/link-dialog/link-dialog.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="closeLabel" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/link-dialog/link-dialog.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/time-range-dialog/time-range-dialog.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="summaryScenario" datatype="html">
+        <source>Scenario: <x id="INTERPOLATION" equiv-text="{{ name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-box/metadata-box.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="82f077da422a701153b9394d42a443990bf1e8bf" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Status:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> <x id="INTERPOLATION" equiv-text="{{ status }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-box/metadata-box.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">summaryStatus</note>
+      </trans-unit>
+      <trans-unit id="bd8c40110499e76ec0b2bb1e0761ef53bf678cb4" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Run Start Time:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> <x id="INTERPOLATION" equiv-text="{{ start | dotToDate}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-box/metadata-box.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">summaryStartTime</note>
+      </trans-unit>
+      <trans-unit id="6142576942ec8ea1fafe1b6ee1a51f572b1cf557" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Run End Time:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> <x id="INTERPOLATION" equiv-text="{{ end | dotToDate}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-box/metadata-box.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">summaryEndTime</note>
+      </trans-unit>
+      <trans-unit id="02c52abbf1e23e70e0c5ff4f2477b68dc52b5241" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Projection Start:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> <x id="INTERPOLATION" equiv-text="{{ pstart }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-box/metadata-box.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">summaryProjectionStart</note>
+      </trans-unit>
+      <trans-unit id="metadataTitle" datatype="html">
+        <source>Scenario Metadata</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="identifierLabel" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Identifier<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br>"/><x id="INTERPOLATION" equiv-text="{{ data._id }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameLabel" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Name<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br>"/><x id="INTERPOLATION" equiv-text="{{ data.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="descLabel" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Description<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br>"/><x id="INTERPOLATION" equiv-text="{{ data.description }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statusLabel" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Status<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br>"/><x id="INTERPOLATION" equiv-text="{{ data.status }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="modelMeta" datatype="html">
+        <source>Model Metadata</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="identifierLabel2" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Identifier<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br>"/><x id="INTERPOLATION" equiv-text="{{ data.modelSettings[0].modelID }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/metadata-dialog/metadata-dialog.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="perspective" datatype="html">
+        <source>Perspective</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/role-dialog/role-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="viewresults" datatype="html">
+        <source> View Scenario Results </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/role-dialog/role-dialog.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancel" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/role-dialog/role-dialog.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ratingQuestionLabel" datatype="html">
+        <source> How relevant are the following outputs to you? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/star-rate/star-rate.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="134d4dcbdf14d91b4d88bd9e920f3f0c91eebb43" datatype="html">
+        <source> Submit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/star-rate/star-rate.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="time-range-title" datatype="html">
+        <source>Model Projection Time Range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/time-range-dialog/time-range-dialog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="value" datatype="html">
+        <source>Value:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/time-range-dialog/time-range-dialog.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/time-range-dialog/time-range-dialog.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="no-time-range" datatype="html">
+        <source>Time Range options not availble for this model.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/time-range-dialog/time-range-dialog.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

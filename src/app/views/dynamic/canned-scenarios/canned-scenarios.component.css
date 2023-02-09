@@ -1,0 +1,155 @@
+.canned-scenarios-header{
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../assets/img/eb_dam.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: hsla(225,75%,16%,0.30);
+  background-blend-mode: overlay;
+  width: 100%;
+}
+
+.home-header-headline{
+  margin-bottom: 30px;
+}
+
+.canned-scenarios-section{
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+.header-icon{
+  width: auto;
+  font-size: 80px;
+  color: whitesmoke;
+  filter: drop-shadow(2px 2px #000);
+}
+
+.container{
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.row {
+  width: auto;
+  border: 1px solid blue;
+}
+
+.canned-selections mat-card{
+  margin: 20px;
+  min-height: 200px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.canned-selections p{
+  font-size: 16px;
+}
+
+.model-icon{
+  font-size: 120px;
+  color: #6171c8;
+}
+
+.can-image-container{
+  margin: 15px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.can-text-container{
+  text-align: justify;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.spinner-container{
+  padding: 70px;
+  text-align: center;
+}
+
+.theme-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.scenario-theme{
+  margin: 25px 10px 25px 10px;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+mat-card-content {
+  flex-grow: 1;
+}
+
+mat-card-content p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  text-align: justify;
+  padding: 15px;
+}
+
+mat-card-actions{
+  text-align: center;
+}
+
+mat-card-actions button {
+  display: inline-block;
+}
+
+.active{
+  color: #ff4081;
+}
+
+@media all and (min-width: 55em) {
+  .theme-child {
+    width: 33.33%;
+  }
+}
+
+@media all and (min-width: 90em) {
+  .theme-child {
+    width: 33.33%;
+  }
+}
+
+.theme-child {
+  display: flex;
+}
+
+.del-btn{
+  text-align: right;
+  color: darkred;
+}
+
+.del-box{
+  text-align: right;
+  width: 100%;
+}

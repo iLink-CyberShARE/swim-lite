@@ -1,0 +1,319 @@
+
+.align-center{
+  text-align: center;
+}
+
+.align-left{
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+}
+
+.categories button{
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 5pt;
+}
+
+.next{
+  text-align: right;
+}
+
+.main-container{
+  margin: auto;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.spinner-container{
+  padding: 70px;
+  text-align: center;
+}
+
+.category-container{
+  margin-top: 12pt;
+}
+
+.flex-container {
+  display: flex; /* or inline-flex */
+  margin: auto;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.parent2 {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+
+.child-left {
+  text-align: left;
+}
+
+.child-right {
+  text-align: right;
+}
+
+.child-center {
+  text-align: center;
+}
+
+.button-center-cats {
+  text-align: center;
+  min-width: 140px;
+  white-space: normal;
+}
+
+.button-center-cats2 {
+  text-align: center;
+  min-width: 200px;
+  white-space: normal;
+}
+
+.button-center-cats3 {
+  text-align: center;
+  min-width: 100px;
+  white-space: normal;
+}
+
+.button-center-cats3 a {
+  white-space: normal;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  line-height: 40px;
+}
+
+.button-center-cats a {
+  white-space: normal;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  line-height: 40px;
+}
+
+.button-center-cats3 a mat-icon{
+  vertical-align: middle;
+}
+
+.button-center-cats a mat-icon{
+  vertical-align: middle;
+}
+
+.catalog-container {
+  width: 100%;
+  margin: auto;
+}
+
+.catalog-container table {
+  margin-top: 10pt;
+  margin-bottom: 15pt;
+  width: 100%;
+}
+
+.catalog-container tr.output-row:active {
+  background: #efefef;
+}
+
+.mat-form-field {
+  margin-top: 25pt;
+  font-size: 14px;
+  width: 100%;
+}
+
+.catalog-detail-container{
+  margin-left: 5pt;
+  margin-top: 10pt;
+  margin-bottom: 15pt;
+  text-align: left;
+  width: 100;
+}
+
+.catalog-detail-cntainer h3{
+  text-align: left;
+}
+
+.bold-me{
+  font-weight: bold;
+}
+
+.theme-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.custom-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.scenario-name{
+  margin-left: 15px;
+}
+
+@media all and (min-width: 55em) {
+  .theme-child {
+    width: 33.33%;
+  }
+}
+
+@media all and (min-width: 90em) {
+  .theme-child {
+    width: 16.66%;
+  }
+}
+
+@media all and (min-width: 40em) {
+  .summary-child {
+    width: 100%;
+  }
+}
+
+
+@media all and (min-width: 60em) {
+  .summary-child {
+    width: 50%;
+  }
+}
+
+
+@media all and (min-width: 90em) {
+  .summary-child {
+    width: 33.33%;
+  }
+}
+
+.theme-child {
+  display: flex;
+}
+
+
+@media all and (min-width: 40em) {
+  .custom-child {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 60em) {
+  .custom-child {
+    width: 50%;
+  }
+}
+
+.custom-child {
+  display: flex;
+}
+
+.selected-category {
+  background-color: #ff4081;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background-color: #ff4081;
+}
+
+.title-categories{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input-catalog{
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+.mat-step-header .mat-step-icon {
+  display: none !important;
+}
+
+.run-btn{
+  background-color: rgb(20, 192, 20);
+  color: white;
+}
+
+
+.hintbox.design{
+  border-top-color: #ff4081;
+}
+
+.hintbox {
+  margin: 10px 10px .6em 10px;
+  padding: 1em 1.2em 1.2em 1em;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  color: #1b1b1b;
+  background:#ebebf2;
+  border-top: .3125em solid #ff4081;
+  border-top-color: #ff4081;
+  border-radius: 3px;
+  text-align: center;
+  font-style: italic;
+}
+
+.model-name{
+  margin-left: 20px;
+}
+
+.sub-menu {
+  text-align: right;
+  margin-right: 10px;
+}
+
+/** Breadcrum navigation **/
+
+ /* Style the list */
+ ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 450px) {
+  .model-name{
+    margin-left: 5px;
+  }
+
+  .model-name h3{
+    text-align: left;
+  }
+}
